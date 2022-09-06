@@ -24,8 +24,8 @@
       "_disableContribution": false,
       "_disableBreadcrumb": true,
       "_gitContribute": {
-        "repo": "https://servicesdocs.visualstudio.com/Chrysalis/_git/ChrysalisHelp",
-        "branch": "docfx_evergreen"
+        "repo": "https://dev.azure.com/servicescode-test/TCS-Test-Project/_git/DocsAsCode",
+        "branch": "main"
       }
     }
   }
