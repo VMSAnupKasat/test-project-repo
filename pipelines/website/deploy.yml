@@ -1,0 +1,145 @@
+name: $(Build.SourceBranchName).$(Date:yyyyMMdd).$(Rev:rr)
+
+trigger:
+  branches:
+    include:
+      - "*"
+  paths:
+    include:
+    - docs/ #ci on 'docs/*' files change
+
+variables:
+  - template: variables.yml
+  - name: isManual
+    value: $[eq(variables['Build.Reason'], 'Manual')]
+  - name: isPullRequest
+    value: $[eq(variables['Build.Reason'], 'PullRequest')]
+  - name: isMain
+    value: $[eq(variables['Build.SourceBranch'], 'refs/heads/main')]
+  - name: isMainPR
+    value: $[and(eq(variables['isPullRequest'],'True'),eq(variables['System.PullRequest.TargetBranch'], 'refs/heads/main'))]
+
+stages:
+  - stage: build
+    displayName: "build"
+    dependsOn: []
+    jobs:
+      - job: docFXBuild
+        displayName: "docFX build"
+        pool:
+          vmImage: $(buildVmImageName)
+        steps:
+        # build docfx site
+        - powershell: |
+            choco install docfx -y --version $(docFXVersion)
+            docfx docfx.json -o '$(docFXOutputFolder)'
+            if ($lastexitcode -ne 0){
+                  throw ("Error generating document")
+            }
+          displayName: 'docfx build'
+        # zip docfx site
+        - task: ArchiveFiles@2
+          displayName: 'zip website'
+          inputs:
+            rootFolderOrFile: $(docFXOutputFolder)
+            includeRootFolder: false
+            archiveFile: '$(Build.ArtifactStagingDirectory)/$(docFXZipFileName)'
+        # upload docfx site as pipeline artifact
+        - task: PublishPipelineArtifact@1
+          displayName: 'publish artifact'
+          inputs:
+            targetPath: '$(Build.ArtifactStagingDirectory)/$(docFXZipFileName)' #Path to the folder or file you want to publish. The path must be a fully qualified path or a valid path relative to the root directory of your repository. (Required)
+            artifactName: '$(docFXArtifactName)' #Your artifact name. You can specify any name you prefer
+            artifactType: 'pipeline' # Required. Options: pipeline, filepath. Default value: pipeline
+  - stage: integration
+    dependsOn:
+    - build
+    displayName: "webapp - int"
+    jobs:
+      - deployment: int
+        displayName: "deploy windows webapp"
+        pool:
+          vmImage: $(releaseVmImageName)
+        environment: $(intEnvironmentName)  # target environment name and optionally a resource name to record the deployment history; format: <environment-name>.<resource-name>
+        strategy:
+          runOnce:    #rolling, canary are the other strategies that are supported
+            deploy:
+              steps:
+              # download docfx artifact
+              - task: DownloadPipelineArtifact@2
+                displayName: 'download docfx artifact'
+                inputs:
+                  source: 'current' # Download artifacts produced by the current pipeline run, or from a specific pipeline run. Options: current, specific
+                  path: '$(Pipeline.Workspace)'
+              # deploy webapp
+              - task: AzureRmWebAppDeployment@4
+                displayName: 'deploy webapp - int'
+                inputs:
+                  azureSubscription: $(azureRMServiceConnection)
+                  WebAppName: $(intWebsiteName)
+                  Package: '$(Pipeline.Workspace)/$(docFXArtifactName)/$(docFXZipFileName)'
+                  enableCustomDeployment: true
+                  DeploymentType: zipDeploy
+                  TakeAppOfflineFlag: false
+  - stage: staging
+    condition: and(succeeded(), eq(variables.isMainPR, true)) # deploy only for Pull Request to main branch
+    dependsOn:
+    - build
+    displayName: "webapp - staging"
+    jobs:
+      - deployment: staging
+        displayName: "deploy windows webapp"
+        pool:
+          vmImage: $(releaseVmImageName)
+        environment: $(stagingEnvironmentName)  # target environment name and optionally a resource name to record the deployment history; format: <environment-name>.<resource-name>
+        strategy:
+          runOnce:    #rolling, canary strategies supported too
+            deploy:
+              steps:
+              # download docfx artifact
+              - task: DownloadPipelineArtifact@2
+                displayName: 'download docfx artifact'
+                inputs:
+                  source: 'current' # Download artifacts produced by the current pipeline run, or from a specific pipeline run. Options: current, specific
+                  path: '$(Pipeline.Workspace)'
+              # deploy webapp
+              - task: AzureRmWebAppDeployment@4
+                displayName: 'deploy webapp - staging'
+                inputs:
+                  azureSubscription: $(azureRMServiceConnection)
+                  WebAppName: $(stagingWebsiteName)
+                  Package: '$(Pipeline.Workspace)/$(docFXArtifactName)/$(docFXZipFileName)'
+                  enableCustomDeployment: true
+                  DeploymentType: zipDeploy
+                  TakeAppOfflineFlag: false
+  - stage: prod
+    condition: and(succeeded(), eq(variables.isMain, true)) # deploy only for main branch
+    dependsOn:
+    - build
+    displayName: "webapp - prod"
+    jobs:
+      - deployment: prod
+        displayName: "deploy windows webapp"
+        pool:
+          vmImage: $(releaseVmImageName)
+        environment: $(prodEnvironmentName)  # target environment name and optionally a resource name to record the deployment history; format: <environment-name>.<resource-name>
+        strategy:
+          runOnce:    #rolling, canary are the other strategies that are supported
+            deploy:
+              steps:
+              # download docfx artifact
+              - task: DownloadPipelineArtifact@2
+                displayName: 'download docfx artifact'
+                inputs:
+                  source: 'current' # Download artifacts produced by the current pipeline run, or from a specific pipeline run. Options: current, specific
+                  path: '$(Pipeline.Workspace)'
+              # deploy webapp
+              - task: AzureRmWebAppDeployment@4
+                displayName: 'deploy webapp - production'
+                inputs:
+                  azureSubscription: $(azureRMServiceConnection)
+                  WebAppName: $(prodWebsiteName)
+                  Package: '$(Pipeline.Workspace)/$(docFXArtifactName)/$(docFXZipFileName)'
+                  enableCustomDeployment: true
+                  DeploymentType: zipDeploy
+                  TakeAppOfflineFlag: false

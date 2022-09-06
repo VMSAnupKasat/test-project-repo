@@ -1,0 +1,174 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "KeyVaultName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name of the Key Vault resource. Unique Public DNS Name, so no duplicated names can exist"
+      }
+    },
+    "KeyVaultLocation": {
+      "type": "string",
+      "defaultValue": "[resourceGroup().location]",
+      "metadata": {
+        "description": "The supported Azure Region where the key vault should be created"
+      }
+    },
+    "KeyVaultSKUName": {
+      "type": "string",
+      "allowedValues": [
+        "standard",
+        "premium"
+      ],
+      "metadata": {
+        "description": "Azure Key Vault is offered in two service tiers, standard or premium"
+      }
+    },
+    "KeyVaultEnabledForDeployment": {
+      "type": "bool",
+      "defaultValue": true,
+      "metadata": {
+        "description": "In order for Key Vault to be used with Azure Resource Manager virtual machines, the EnabledForDeployment property on Key Vault must be set to true"
+      }
+    },
+    "KeyVaultEnabledForDiskEncryption": {
+      "type": "bool",
+      "defaultValue": true,
+      "metadata": {
+        "description": "For enhanced virtual machine (VM) security and compliance, virtual disks in Azure can be encrypted"
+      }
+    },
+    "KeyVaultEnabledForTemplateDeployment": {
+      "defaultValue": true,
+      "type": "bool",
+      "metadata": {
+        "description": "When you need to pass a secure value (like a password) as a parameter during deployment. The value is never exposed because you only reference its key vault ID"
+      }
+    },
+    "KeyVaultEnableSoftDelete": {
+      "type": "bool",
+      "defaultValue": true,
+      "metadata": {
+        "description": "To be able to recover deleted objects"
+      }
+    },
+    "KeyVaultCreateMode": {
+      "type": "string",
+      "allowedValues": [
+        "default",
+        "recover"
+      ],
+      "defaultValue": "default",
+      "metadata": {
+        "description": "To indicate whether the vault need to be recovered or not"
+      }
+    },
+    "KeyVaultAccessPolicies": {
+      "type": "array",
+      "metadata": {
+        "description": "Access Policy List"
+      },
+      "defaultValue": []
+    },
+    "KeyVaultEnableFirewall": {
+      "type": "bool",
+      "defaultValue": false,
+      "metadata": {
+        "description": "Indicates if the Firewall must be enabled for the Key Vault"
+      }
+    },
+    "KeyVaultMicrosoftServicesBypassFirewall": {
+      "type": "bool",
+      "defaultValue": false,
+      "metadata": {
+        "description": "Indicates if must allow trusted Microsoft services to bypass the firewall"
+      }
+    },
+    "KeyVaultFirewallAllowedSubnets": {
+      "type": "array",
+      "defaultValue": [],
+      "metadata": {
+        "description": "Information of existing virtual networks and subnets allowed to access the KeyVault"
+      }
+    },
+    "KeyVaultFirewallAllowedPublicIPs": {
+      "type": "array",
+      "defaultValue": [],
+      "metadata": {
+        "description": "List of IPv4 IPs or ranges to allow access from the internet to the KeyVault"
+      }
+    },
+    "KeyVaultFirewallAllowedFirewallIps": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Allowed firewall IPs",
+        "AllEnvironmentsAutoAssignValueFromVariablesKeyVaultSecretName": "allowedFirewallIPs"
+      }
+    }
+  },
+  "variables": {
+    "KeyVaultTenantId": "[subscription().tenantId]",
+    "KeyVaultByPassFirewallTrue": "AzureServices",
+    "KeyVaultByPassFirewallFalse": "None",
+    "KeyVaultFirewallAllowedFirewallIpsArray": "[if(empty(parameters('KeyVaultFirewallAllowedFirewallIps')),variables('EmptyArray'),if(contains(parameters('KeyVaultFirewallAllowedFirewallIps'),','),split(parameters('KeyVaultFirewallAllowedFirewallIps'),','),array(parameters('KeyVaultFirewallAllowedFirewallIps'))))]",
+    "KeyVaultFirewallAllIP": "[concat(if(empty(parameters('KeyVaultFirewallAllowedPublicIPs')),variables('EmptyArray'),parameters('KeyVaultFirewallAllowedPublicIPs')), variables('KeyVaultFirewallAllowedFirewallIpsArray'))]",
+    "KeyVaultFirewallBypassAzureServices": "[if(parameters('KeyVaultMicrosoftServicesBypassFirewall'),variables('KeyVaultByPassFirewallTrue'),variables('KeyVaultByPassFirewallFalse'))]",
+    "KeyVaultFirewallAllowedSubnetsArrayCount": "[length(parameters('KeyVaultFirewallAllowedSubnets'))]",
+    "KeyVaultFirewallAllowedSubnetsArrayEmpty": "[equals(variables('KeyVaultFirewallAllowedSubnetsArrayCount'),0)]",
+    "KeyVaultFirewallAllowedIPsArrayCount": "[length(variables('KeyVaultFirewallAllIP'))]",
+    "KeyVaultFirewallAllowedIPsArrayEmpty": "[equals(variables('KeyVaultFirewallAllowedIPsArrayCount'),0)]",
+    "copy": [
+      {
+        "name": "KeyVaultFirewallAllowedSubnets",
+        "count": "[if(variables('KeyVaultFirewallAllowedSubnetsArrayEmpty'),1,variables('KeyVaultFirewallAllowedSubnetsArrayCount'))]",
+        "input": {
+          "id": "[if(variables('KeyVaultFirewallAllowedSubnetsArrayEmpty'),' ',concat('/subscriptions/',parameters('KeyVaultFirewallAllowedSubnets')[copyIndex('KeyVaultFirewallAllowedSubnets')].VNetSubscriptionId,'/resourceGroups/',parameters('KeyVaultFirewallAllowedSubnets')[copyIndex('KeyVaultFirewallAllowedSubnets')].VNetResourceGroupName,'/providers/Microsoft.Network/virtualnetworks/',parameters('KeyVaultFirewallAllowedSubnets')[copyIndex('KeyVaultFirewallAllowedSubnets')].VNetName,'/subnets/',parameters('KeyVaultFirewallAllowedSubnets')[copyIndex('KeyVaultFirewallAllowedSubnets')].VNetSubnetName))]",
+          "action": "Allow"
+        }
+      },
+      {
+        "name": "KeyVaultFirewallAllowedIpAddresses",
+        "count": "[if(variables('KeyVaultFirewallAllowedIPsArrayEmpty'),1,variables('KeyVaultFirewallAllowedIPsArrayCount'))]",
+        "input": {
+          "value": "[if(variables('KeyVaultFirewallAllowedIPsArrayEmpty'),' ',variables('KeyVaultFirewallAllIP')[copyIndex('KeyVaultFirewallAllowedIpAddresses')])]",
+          "action": "Allow"
+        }
+      }
+    ],
+    "EmptyArray": [],
+    "firewallEnabled": {
+      "bypass": "[variables('KeyVaultFirewallBypassAzureServices')]",
+      "virtualNetworkRules": "[if(variables('KeyVaultFirewallAllowedSubnetsArrayEmpty'),variables('EmptyArray'),variables('KeyVaultFirewallAllowedSubnets'))]",
+      "ipRules": "[if(variables('KeyVaultFirewallAllowedIPsArrayEmpty'),variables('EmptyArray'),variables('KeyVaultFirewallAllowedIpAddresses'))]",
+      "defaultAction": "Deny"
+    },
+    "firewallDisabled": {
+      "defaultAction": "Allow"
+    }
+  },
+  "resources": [
+    {
+      "type": "Microsoft.KeyVault/vaults",
+      "name": "[parameters('KeyVaultName')]",
+      "apiVersion": "2016-10-01",
+      "location": "[parameters('KeyVaultLocation')]",
+      "properties": {
+        "tenantId": "[variables('KeyVaultTenantId')]",
+        "sku": {
+          "family": "A",
+          "name": "[parameters('KeyVaultSKUName')]"
+        },
+        "accessPolicies": "[parameters('KeyVaultAccessPolicies')]",
+        "enabledForDeployment": "[parameters('KeyVaultEnabledForDeployment')]",
+        "enabledForDiskEncryption": "[parameters('KeyVaultEnabledForDiskEncryption')]",
+        "enabledForTemplateDeployment": "[parameters('KeyVaultEnabledForTemplateDeployment')]",
+        "enableSoftDelete": "[if(parameters('KeyVaultEnableSoftDelete'), json('true'), json('null'))]",
+        "createmode": "[parameters('KeyVaultCreatemode')]",
+        "networkAcls": "[if(parameters('KeyVaultEnableFirewall'),variables('firewallEnabled'),variables('firewallDisabled'))]"
+      }
+    }
+  ],
+  "outputs": {}
+}

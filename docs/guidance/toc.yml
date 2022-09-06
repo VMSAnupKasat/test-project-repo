@@ -1,0 +1,43 @@
+- name: Getting Started
+  href: index.md
+- name: Core Structure
+  href: core/index.md
+  items:
+    - name: Repository
+      href: core/repo.md
+    - name: Team Collaboration Site
+      href: core/collaboration-site.md
+    - name: README.md Content
+      href: core/readme-content.md
+    - name: CONTRIBUTING.md Content
+      href: core/contributing-content.md
+    - name: Evergreen IP Metadata Content
+      href: core/evergreen-ip-metadata.md
+- name: Documentation Lens
+  href: documentation-lens/index.md
+  items:
+    - name: Evergreen IP Docs Metadata Content
+      href: documentation-lens/evergreen-docs-content.md
+    - name: Document Authoring Guidance
+      href: documentation-lens/document-authoring.md
+    - name: Self-hosted Site
+      href: documentation-lens/self-hosted-site.md
+      items:
+        - name: Infrastructure as Code
+          href: documentation-lens/self-hosted-site/infrastructure-as-code.md
+        - name: Azure DevOps YAML pipelines
+          href: documentation-lens/self-hosted-site/azure-devops-yaml-pipelines.md
+        - name: Azure DevOps GUI pipelines
+          href: documentation-lens/self-hosted-site/azure-devops-gui-pipelines.md
+- name: Insights
+  href: insights/index.md
+  items:
+    - name: How to set up infrastructure
+      href: insights/how-to-setup-infrastructure.md
+    - name: PowerBI Templates
+      href: insights/powerbi-templates/index.md
+      items:
+        - name: Documentation lens insights template
+          href: insights/powerbi-templates/documentation-lens-insights-template.md
+- name: <Your> Lens
+  href: other-lens/index.md

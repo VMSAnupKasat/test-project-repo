@@ -1,0 +1,35 @@
+variables:
+  # pipeline config
+  azureRMServiceConnection: 'Evergreen-Delivery-IP' # The ADO Service Connection to be used for the deployment
+  subscriptionId: '4d186e10-e0a0-4555-a97f-7c8c2272d741' #T he subscription ID where Infrastructure will be deployed
+  vmImageName: 'ubuntu-latest'  # Agent VM image name
+  System.Debug: true # View pipeline logs
+  configFilesPath: '$(Build.SourcesDirectory)/platform' # Path to platform IaC configuration files
+  iacsTemplatesPath: '$(Build.SourcesDirectory)/pipelines/iacs' # Path to IaC modules path
+  keyVaultTemplateFilePath: '$(iacsTemplatesPath)/key-vault.json' # Path to Key Vault module deployment template file
+  applicationInsightsTemplateFilePath: '$(iacsTemplatesPath)/application-insights.json' #  Path to Application Insights module deployment template file
+  appServicePlanWindowsTemplateFilePath: '$(iacsTemplatesPath)/app-service-plan-windows.json' # Path to Windows App Service Plan module deployment template file
+  appServiceWindowsTemplateFilePath: '$(iacsTemplatesPath)/app-service-windows.json' # Path to Windows App Service module deployment template file
+  
+  # environment config
+  configKeyVaultName: 'egipkv' # Name of the Key Vault used to store configuration variables
+  resourceGroupName: 'Evergreen-Delivery-IP' # Name of the Resource Group where the infrastructure will be deployed
+  resourceGroupLocation: 'West Europe' # Location of the Resource Group where the infrastructure will be deployed
+  
+  # common
+  commonEnvironmentName: '$(resourceGroupName)-common' # Name given to the Azure pipelines deployment environment with deployment steps for the common hosting infrastructure elements, listed below
+  configFilePathKeyVault: '$(configFilesPath)/common/egipkv.json' # Path to the Key Vault configuration file used to store configuration variables
+  configFilePathApplicationInsights: '$(configFilesPath)/common/egipai.json' # Path to the Application Insights configuration file used to capture web site logs
+  configFilePathAppServicePlanWindows: '$(configFilesPath)/common/egipsp.json' # Path to the Windows App Service Plan configuration file used to host the App Services for all environments
+
+  # int
+  intEnvironmentName: 'infra-$(resourceGroupName)-int' # Name given to the Azure pipelines deployment environment with deployment steps for the integration hosting infrastructure elements, listed below
+  intConfigFilePathAppServiceWindows: '$(configFilesPath)/int/evergreenip-int.json' # Path to the Windows App Service configuration file used to host the web app for the integration environment
+
+  # staging
+  stagingEnvironmentName: 'infra-$(resourceGroupName)-staging' # Name given to the Azure pipelines deployment environment with deployment steps for the staging hosting infrastructure elements, listed below
+  stagingConfigFilePathAppServiceWindows: '$(configFilesPath)/staging/evergreenip-staging.json' # Path to the Windows App Service configuration file used to host the web app for the staging environment
+
+  # prod
+  prodEnvironmentName: 'infra-(resourceGroupName)-prod' # Name given to the Azure pipelines deployment environment with deployment steps for the production hosting infrastructure elements, listed below
+  prodConfigFilePathAppServiceWindows: '$(configFilesPath)/prod/evergreenip.json' # Path to the Windows App Service configuration file used to host the web app for the production environment

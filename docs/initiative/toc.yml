@@ -1,0 +1,16 @@
+- name: Introduction
+  href: index.md
+- name: Why
+  items:
+    - name: Why IP?
+      href: why-ip.md
+    - name: Why Change Anything?
+      href: why-change-anything.md
+- name: Plans
+  items:
+    - name: Directions of Change
+      href: directions-of-change.md
+    - name: Objectives
+      href: objectives.md
+    - name: Horizons
+      href: horizons.md

@@ -1,0 +1,24 @@
+variables:
+  # pipeline config
+  azureRMServiceConnection: "Evergreen-Delivery-IP" # The ADO Service Connection to be used for the deployment
+  subscriptionId: "4d186e10-e0a0-4555-a97f-7c8c2272d741" #T he subscription ID where Infrastructure will be deployed
+  tenantId: "72f988bf-86f1-41af-91ab-2d7cd011db47"
+  vmImageName: "windows-latest" # Agent VM image name
+  System.Debug: true # View pipeline logs
+  configFilesPath: "$(Build.SourcesDirectory)/platform" # Path to platform IaC configuration files
+  iacsTemplatesPath: "$(Build.SourcesDirectory)/pipelines/iacs" # Path to IaC modules path
+  appServicePlanWindowsTemplateFilePath: "$(iacsTemplatesPath)/app-service-plan-windows.json" # Path to Windows App Service Plan module deployment template file
+  functionAppTemplateFilePath: "$(iacsTemplatesPath)/function-app.json" # Path to Windows Function App module deployment template file
+
+  # environment config
+  resourceGroupName: "Evergreen-Delivery-IP" # Name of the Resource Group where the infrastructure will be deployed
+  storageAccountName: "7dhwxincpkvb6azfunctions" # Name of the Storage Account where data will be stored
+  keyvaultName: "egipkv" # Name of the KeyVault where ado pat token credentials are
+  adoTokenSecretName: "adoToken" # Name of the ADO token secret stored in the keyvault
+  adoOrganization: "servicescode"
+  resourceGroupLocation: "West Europe" # Location of the Resource Group where the infrastructure will be deployed
+
+  # common
+  telemetryEnvironmentName: "$(resourceGroupName)-telemetry"
+  configFilePathAppServicePlanWindows: "$(configFilesPath)/telemetry/egipsp-telemetry.json" # Path to the Windows App Service Plan configuration file used to host the App Services for all environments
+  telemetryConfigFilePathFunctionApp: "$(configFilesPath)/telemetry/egipfapp-telemetry.json" # Path to the Windows App Service configuration file used to host the web app for the integration environment

@@ -1,0 +1,138 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "WindowsAppServicePlanName": {
+            "metadata": {
+                "description": "The name of the App Service Plan that hosts the App Service"
+            },
+            "type": "string"
+        },
+        "WindowsAppServicePlanLocation": {
+            "metadata": {
+                "description": "The location where the App Service and the App Service Plan will be deployed"
+            },
+            "type": "string"
+        },
+        "WindowsAppServicePlanInstances": {
+            "metadata": {
+                "description": "The amount of instances that will run the App Services in the App Service Plan"
+            },
+            "type": "int"
+        },
+        "WindowsAppServicePlanTier": {
+            "type": "string",
+            "allowedValues": [
+                "Free",
+                "Shared",
+                "Basic",
+                "Standard",
+                "Premium",
+                "PremiumV2",
+                "Dynamic"
+            ],
+            "metadata": {
+                "description": "The Tier of the App Service Plan. 'Free' and 'Shared' are shared plans that run Apps in shared Virtual Machines, with Apps from other customers. 'Basic', 'Standard', 'Premium' and 'PremiumV2' run apps on dedicated VMs"
+            }
+        },
+        "WindowsAppServicePlanSize": {
+            "type": "string",
+            "allowedValues": [
+                "1",
+                "2",
+                "3"
+            ],
+            "metadata": {
+                "description": " The Size of the VMs that run the Apps. The higher this number is, the better the hardware of the underlying VMs is"
+            }
+        }
+    },
+    "variables": {
+        "appServicePlanSizes": {
+            "Free": {
+                "SizeName": {
+                    "1": "F1",
+                    "2": "F1",
+                    "3": "F1"
+                },
+                "Family": "F"
+            },
+            "Shared": {
+                "SizeName": {
+                    "1": "D1",
+                    "2": "D1",
+                    "3": "D1"
+                },
+                "Family": "D"
+            },
+            "Basic": {
+                "SizeName": {
+                    "1": "B1",
+                    "2": "B2",
+                    "3": "B3"
+                },
+                "Family": "B"
+            },
+            "Standard": {
+                "SizeName": {
+                    "1": "S1",
+                    "2": "S2",
+                    "3": "S3"
+                },
+                "Family": "S"
+            },
+            "Premium": {
+                "SizeName": {
+                    "1": "P1",
+                    "2": "P2",
+                    "3": "P3"
+                },
+                "Family": "P"
+            },
+            "PremiumV2": {
+                "SizeName": {
+                    "1": "P1v2",
+                    "2": "P2v2",
+                    "3": "P3v2"
+                },
+                "Family": "Pv2"
+            },
+            "Dynamic": {
+                "SizeName": {
+                    "1": "Y1",
+                    "2": "Y1",
+                    "3": "Y1"
+                },
+                "Family": "Y"
+            }
+        },
+        "appServicePlanSkuSize": "[variables('appServicePlanSizes')[parameters('WindowsAppServicePlanTier')].SizeName[parameters('WindowsAppServicePlanSize')]]",
+        "appServicePlanSkuFamily": "[variables('appServicePlanSizes')[parameters('WindowsAppServicePlanTier')].Family]",
+        "appServicePlanSkuName": "[variables('appServicePlanSkuSize')]"
+    },
+    "resources": [
+        {
+            "type": "Microsoft.Web/serverfarms",
+            "kind": "app",
+            "name": "[parameters('WindowsAppServicePlanName')]",
+            "apiVersion": "2018-02-01",
+            "location": "[parameters('WindowsAppServicePlanLocation')]",
+            "sku": {
+                "name": "[variables('appServicePlanSkuName')]",
+                "capacity": "[parameters('WindowsAppServicePlanInstances')]",
+                "tier": "[parameters('WindowsAppServicePlanTier')]",
+                "size": "[variables('appServicePlanSkuSize')]",
+                "family": "[variables('appServicePlanSkuFamily')]"
+            },
+            "properties": {
+                "name": "[parameters('WindowsAppServicePlanName')]",
+                "perSiteScaling": false,
+                "reserved": false,
+                "targetWorkerCount": 0,
+                "targetWorkerSizeId": 0
+            },
+            "dependsOn": []
+        }
+    ],
+    "outputs": {}
+}

@@ -1,0 +1,134 @@
+name: $(Build.SourceBranchName).$(Date:yyyyMMdd).$(Rev:rr)
+
+trigger:
+  branches:
+    include:
+      - "*"
+  paths:
+    include:
+      - platform/ #ci on 'platform/*' files change
+      - functions/
+
+variables:
+  - template: variables.yml
+  - name: isManual
+    value: $[eq(variables['Build.Reason'], 'Manual')]
+  - name: isPullRequest
+    value: $[eq(variables['Build.Reason'], 'PullRequest')]
+  - name: isMain
+    value: $[eq(variables['Build.SourceBranch'], 'refs/heads/main')]
+  - name: isMainPR
+    value: $[and(eq(variables['isPullRequest'],'True'),eq(variables['System.PullRequest.TargetBranch'], 'refs/heads/main'))]
+
+stages:
+  - stage: telemetry
+    displayName: "telemetry"
+    dependsOn: []
+    jobs:
+      - deployment: telemetry
+        displayName: "telemetry infrastructure"
+        pool:
+          vmImage: $(vmImageName)
+        environment: $(telemetryEnvironmentName) # target environment name and optionally a resource name to record the deployment history; format: <environment-name>.<resource-name>
+        strategy:
+          runOnce: #rolling, canary are the other strategies that are supported
+            deploy:
+              steps:
+                - checkout: self
+                # deploy windows app service plan
+                - task: AzureResourceManagerTemplateDeployment@3
+                  displayName: "windows asp"
+                  inputs:
+                    deploymentScope: "Resource Group"
+                    azureResourceManagerConnection: $(azureRMServiceConnection)
+                    subscriptionId: $(subscriptionId)
+                    action: "Create Or Update Resource Group"
+                    resourceGroupName: "$(resourceGroupName)"
+                    location: $(resourceGroupLocation)
+                    templateLocation: "Linked artifact"
+                    csmFile: "$(appServicePlanWindowsTemplateFilePath)"
+                    csmParametersFile: "$(configFilePathAppServicePlanWindows)"
+                    deploymentMode: "Incremental"
+                    deploymentOutputs: "OUTPUTS_APPSERVICEPLANWINDOWS"
+
+                - task: AzureResourceManagerTemplateDeployment@3
+                  displayName: "function app"
+                  inputs:
+                    deploymentScope: "Resource Group"
+                    azureResourceManagerConnection: $(azureRMServiceConnection)
+                    subscriptionId: $(subscriptionId)
+                    action: "Create Or Update Resource Group"
+                    resourceGroupName: "$(resourceGroupName)"
+                    location: $(resourceGroupLocation)
+                    templateLocation: "Linked artifact"
+                    csmFile: "$(functionAppTemplateFilePath)"
+                    csmParametersFile: "$(telemetryConfigFilePathFunctionApp)"
+                    deploymentMode: "Incremental"
+                    deploymentOutputs: "armOutput"
+
+                - task: PowerShell@2
+                  displayName: "PowerShell: convert ARM output into variables"
+                  inputs:
+                    targetType: filePath
+                    filePath: "$(Build.SourcesDirectory)/pipelines/scripts/convert-armOutputToVariables.ps1"
+                    arguments: -armOutput '$(armOutput)'
+
+                - task: ArchiveFiles@2
+                  displayName: "Archive functions"
+                  inputs:
+                    rootFolderOrFile: "functions/*"
+                    archiveFile: "functions/fnapp.zip"
+                    verbose: true
+
+                - task: AzureFunctionApp@1
+                  displayName: "Azure Function App Deploy: package"
+                  inputs:
+                    azureSubscription: $(azureRMServiceConnection)
+                    appType: functionApp
+                    appName: $(functionAppName)
+                    package: $(Build.SourcesDirectory)/functions/fnapp.zip
+                    deploymentMethod: runFromPackage
+
+                - task: AzureAppServiceSettings@1
+                  displayName: Azure Function App Service Settings
+                  inputs:
+                    azureSubscription: $(azureRMServiceConnection)
+                    appName: $(functionAppName)
+                    appSettings: |
+                      [
+                        {
+                          "name": "RESOURCE_GROUP_NAME",
+                          "value": "$(resourceGroupName)",
+                          "slotSetting": false
+                        },
+                        {
+                          "name": "STORAGE_ACCOUNT_NAME",
+                          "value": "$(storageAccountName)", 
+                          "slotSetting": false
+                        },
+                        {
+                          "name": "ADO_ORGANIZATION",
+                          "value": "$(adoOrganization)", 
+                          "slotSetting": false
+                        },
+                        {
+                          "name": "KEYVAULT_NAME",
+                          "value": "$(keyvaultName)", 
+                          "slotSetting": false
+                        },
+                        {
+                          "name": "ADO_TOKEN_SECRET_NAME",
+                          "value": "$(adoTokenSecretName)", 
+                          "slotSetting": false
+                        },
+                        {
+                          "name": "SUBSCRIPTION_ID",
+                          "value": "$(subscriptionId)", 
+                          "slotSetting": false
+                        },
+                        {
+                          "name": "TENANT_ID",
+                          "value": "$(tenantId)", 
+                          "slotSetting": false
+                        }
+                      ]

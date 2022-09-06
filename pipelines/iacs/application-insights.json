@@ -1,0 +1,82 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "AppInsightsName": {
+      "metadata": {
+        "description": "The name of the Application Insights"
+      },
+      "type": "string"
+    },
+    "AppInsightsLocation": {
+      "type": "string",
+      "metadata": {
+        "description": "The location for the Application Insights."
+      }
+    },
+    "AppInsightsApplicationType": {
+      "metadata": {
+        "description": "The type of Application Insights"
+      },
+      "type": "string",
+      "defaultValue": "web",
+      "allowedValues": [
+        "MobileCenter",
+        "web",
+        "other",
+        "java",
+        "Node.JS"
+      ]
+    },
+    "AppInsightsKeyVaultName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name of the Key Vault where the Account's Connection Strings and Keys will be saved"
+      },
+      "defaultValue": ""
+    },
+    "AppInsightsSecretNameInstrumentationKey": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Output secret name for primary master key"
+      }
+    }
+  },
+  "variables": {
+    "AppInsightsSecretNameSecondaryMasterKey": "[if(not(empty(parameters('AppInsightsSecretNameInstrumentationKey'))), parameters('AppInsightsSecretNameInstrumentationKey'), concat(parameters('AppInsightsName'),'-instrumentation-key'))]"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Insights/components",
+      "apiVersion": "2015-05-01",
+      "name": "[parameters('AppInsightsName')]",
+      "location": "[parameters('AppInsightsLocation')]",
+      "kind": "[parameters('AppInsightsApplicationType')]",
+      "properties": {
+        "Application_Type": "[parameters('AppInsightsApplicationType')]",
+        "Flow_Type": "Bluefield",
+        "Request_Source": "rest"
+      }
+    },
+    {
+      "condition": "[not(empty(parameters('AppInsightskeyVaultName')))]",
+      "type": "Microsoft.KeyVault/vaults/secrets",
+      "name": "[concat(parameters('AppInsightskeyVaultName'), '/', variables('AppInsightsSecretNameSecondaryMasterKey'))]",
+      "apiVersion": "2018-02-14",
+      "properties": {
+        "value": "[reference(parameters('AppInsightsName')).InstrumentationKey]",
+        "contentType": "string"
+      },
+      "dependsOn": [
+        "[concat('Microsoft.Insights/components/',parameters('AppInsightsName'))]"
+      ]
+    }
+  ],
+  "outputs": {
+    "instrumentationKey": {
+      "type": "string",
+      "value": "[reference(parameters('AppInsightsName')).InstrumentationKey]"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+- version: 0.1
+  id: evergreenip
+  name: Evergreen Delivery IP
+  description: 
+    URL: https://aka.ms/evergreenip
+    text: Evergreen Delivery IP is ACAI CTO driven program to improve the way CTO and field teams are finding, reusing, becoming contributors and leading evolution of managed and community IP. This is repository containing the guidance and supporting materials/tools created through the initiative.
+  created: 2021-03-24
+  core-team:
+    - name: Alvaro Guadamillas Herranz
+      email: alguadam@microsoft.com
+    - name: Angie McKeown
+      email: amckeown@microsoft.com
+    - name: Bruno Valente
+      email: bvalente@microsoft.com
+    - name: Kan Tang
+      email: kantan@microsoft.com
+    - name: Michael Muta
+      email: mimuta@microsoft.com
+    - name: Michael Watson
+      email: miwatso@microsoft.com
+    - name: Owen Lundberg
+      email: owenlund@microsoft.com
+    - name: Rima Bhattacharya
+      email: rimab@microsoft.com
+    - name: Aldis Viļums
+      email: aldisv@microsoft.com
+  collaboration: https://teams.microsoft.com/l/channel/19%3a3d51464fa01345f6a79290ac257ead8c%40thread.tacv2/General?groupId=ef3294c6-f026-47a2-842e-1881f6f09272&tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47
+  issues: https://dev.azure.com/evergreen-delivery-ip/docs/_backlogs/backlog/docs%20Team/Epics
+  tags: IP,IP management,ACAI,ACAI CTO,guidance,pattern
+  taxonomies:
+    - type: product
+      value: not product specific
+    - type: language
+      value: en
+  lenses:
+    - type: docs
+      metadata: evergreen-docs.yml

@@ -1,0 +1,9 @@
+.msft-logo {
+  margin: 15px;
+  padding: 15px;
+  width: 108px;
+  height: 23px;
+  background-size: contain;
+  background-image: url("images/logo.png");
+  background-repeat: no-repeat;
+}

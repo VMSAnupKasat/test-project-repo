@@ -1,0 +1,8 @@
+# this file contains description of the documentation as per evergreen documentation lens
+# see https://aka.ms/evergreenip Guidance section for more details on Documentation Lens
+- lens: docs
+  version: 0.1
+  source: /docs
+  published: http://aka.ms/evergreenip
+  doc-generator-type: docfx
+  doc-generator-config: /docfx.json

@@ -1,0 +1,29 @@
+variables:
+  # pipeline config
+  azureRMServiceConnection: 'Evergreen-Delivery-IP' #The ADO Service Connection to use for the deployment
+  buildVmImageName: 'windows-latest'  # Agent VM image name for build jobs
+  releaseVmImageName: 'ubuntu-latest'  # Agent VM image name for release jobs
+  System.Debug: true # View pipeline logs
+
+  # DocFX config
+  docFXVersion: '2.57.2' # Check: https://github.com/dotnet/docfx/releases
+  docFXOutputFolder: '$(Build.SourcesDirectory)/website' # The path where docfx will generate the website
+  docFXZipFileName: 'website.zip' # The name of the zip file with the website
+  docFXArtifactName: 'egip-website' # The ADO artifact name containing the website to be deployed
+
+  # Website deployment package
+  
+  # environment config
+  resourceGroupName: 'Evergreen-Delivery-IP' # The name of the RG where the App Service is deployed
+
+  # int
+  intEnvironmentName: 'website-$(resourceGroupName)-int' # The name of the Pipeline environment with the deployment steps for the Int environment
+  intWebsiteName: 'evergreenip-int' # The name of the App Service for the Int environment
+
+  # staging
+  stagingEnvironmentName: 'website-$(resourceGroupName)-staging' # The name of the Pipeline environment with the deployment steps for the Staging environment
+  stagingWebsiteName: 'evergreenip-staging' # The name of the App Service for the Staging environment
+
+  # prod
+  prodEnvironmentName: 'website-$(resourceGroupName)-prod' # The name of the Pipeline environment with the deployment steps for the Production environment
+  prodWebsiteName: 'evergreenip' # The name of the App Service for the Production environment

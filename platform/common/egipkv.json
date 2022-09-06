@@ -1,0 +1,47 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "KeyVaultName": {
+        "value": "egipkv"
+      },
+      "KeyVaultLocation": {
+        "value": "westeurope"
+      },
+      "KeyVaultSKUName": {
+        "value": "standard"
+      },
+      "KeyVaultEnabledForDeployment": {
+        "value": false
+      },
+      "KeyVaultEnabledForDiskEncryption": {
+        "value": false
+      },
+      "KeyVaultEnabledForTemplateDeployment": {
+        "value": true
+      },
+      "KeyVaultEnableSoftDelete": {
+        "value": true
+      },
+      "KeyVaultCreateMode": {
+        "value": "default"
+      },
+      "KeyVaultAccessPolicies": {
+        "value": [
+          {
+            "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+            "objectId": "8d839635-960b-49ae-8b72-ca2ac90c18ac",
+            "permissions": {
+              "keys": [ "all" ],
+              "secrets": [ "all" ],
+              "certificates": [ "all" ],
+              "storage": []
+            }
+          }
+        ]
+      },
+      "KeyVaultEnableFirewall": {
+        "value": false
+      }
+    }
+  }

@@ -1,0 +1,177 @@
+name: $(Build.SourceBranchName).$(Date:yyyyMMdd).$(Rev:rr)
+
+trigger:
+  branches:
+    include:
+      - "*"
+  paths:
+    include:
+    - platform/ #ci on 'platform/*' files change
+
+variables:
+  - template: variables.yml
+  - name: isManual
+    value: $[eq(variables['Build.Reason'], 'Manual')]
+  - name: isPullRequest
+    value: $[eq(variables['Build.Reason'], 'PullRequest')]
+  - name: isMain
+    value: $[eq(variables['Build.SourceBranch'], 'refs/heads/main')]
+  - name: isMainPR
+    value: $[and(eq(variables['isPullRequest'],'True'),eq(variables['System.PullRequest.TargetBranch'], 'refs/heads/main'))]
+
+stages:
+  - stage: common
+    displayName: "common"
+    dependsOn: []
+    jobs:
+      - deployment: common
+        displayName: "common infrastructure"
+        pool:
+          vmImage: $(vmImageName)
+        environment: $(commonEnvironmentName)  # target environment name and optionally a resource name to record the deployment history; format: <environment-name>.<resource-name>
+        strategy:
+          runOnce: #rolling, canary are the other strategies that are supported
+            deploy:
+              steps:
+                  - checkout: self
+                  # deploy key vault to use secrets as arm template configuration
+                  - task: AzureResourceManagerTemplateDeployment@3
+                    displayName: 'key vault'
+                    inputs:
+                      deploymentScope: 'Resource Group'
+                      azureResourceManagerConnection: $(azureRMServiceConnection)
+                      subscriptionId: $(subscriptionId)
+                      action: 'Create Or Update Resource Group'
+                      resourceGroupName: $(resourceGroupName)
+                      location: $(resourceGroupLocation)
+                      templateLocation: 'Linked artifact'
+                      csmFile: '$(keyVaultTemplateFilePath)'
+                      csmParametersFile: '$(configFilePathKeyVault)'
+                      deploymentMode: 'Incremental'
+                      deploymentOutputs: 'OUTPUTS_KEYVAULT'
+                      pwsh: true
+                  # deploy application insights
+                  - task: AzureResourceManagerTemplateDeployment@3
+                    displayName: 'application insights'
+                    inputs:
+                      deploymentScope: 'Resource Group'
+                      azureResourceManagerConnection: $(azureRMServiceConnection)
+                      subscriptionId: $(subscriptionId)
+                      action: 'Create Or Update Resource Group'
+                      resourceGroupName: $(resourceGroupName)
+                      location: $(resourceGroupLocation)
+                      templateLocation: 'Linked artifact'
+                      csmFile: '$(applicationInsightsTemplateFilePath)'
+                      csmParametersFile: '$(configFilePathApplicationInsights)'
+                      deploymentMode: 'Incremental'
+                      deploymentOutputs: 'OUTPUTS_APPLICATIONINSIGHTS'
+                      pwsh: true
+                  # deploy windows app service plan
+                  - task: AzureResourceManagerTemplateDeployment@3
+                    displayName: 'windows asp'
+                    inputs:
+                      deploymentScope: "Resource Group"
+                      azureResourceManagerConnection: $(azureRMServiceConnection)
+                      subscriptionId: $(subscriptionId)
+                      action: "Create Or Update Resource Group"
+                      resourceGroupName: "$(resourceGroupName)"
+                      location: $(resourceGroupLocation)
+                      templateLocation: "Linked artifact"
+                      csmFile: "$(appServicePlanWindowsTemplateFilePath)"
+                      csmParametersFile: "$(configFilePathAppServicePlanWindows)"
+                      deploymentMode: "Incremental"
+                      deploymentOutputs: "OUTPUTS_APPSERVICEPLANWINDOWS"
+  - stage: integration
+    dependsOn:
+    - common
+    displayName: "webapp - int"
+    jobs:
+      - deployment: int
+        displayName: "deploy windows webapp"
+        pool:
+          vmImage: $(vmImageName)
+        environment: $(intEnvironmentName)  # target environment name and optionally a resource name to record the deployment history; format: <environment-name>.<resource-name>
+        strategy:
+          runOnce:    #rolling, canary are the other strategies that are supported
+            deploy:
+              steps:
+                - checkout: self
+                # deploy linux web app
+                - task: AzureResourceManagerTemplateDeployment@3
+                  displayName: 'app service'
+                  inputs:
+                    deploymentScope: 'Resource Group'
+                    azureResourceManagerConnection: $(azureRMServiceConnection)
+                    subscriptionId: $(subscriptionId)
+                    action: 'Create Or Update Resource Group'
+                    resourceGroupName: $(resourceGroupName)
+                    location: $(resourceGroupLocation)
+                    templateLocation: 'Linked artifact'
+                    csmFile: '$(appServiceWindowsTemplateFilePath)'
+                    csmParametersFile: '$(intConfigFilePathAppServiceWindows)'
+                    deploymentMode: 'Incremental'
+                    deploymentOutputs: 'OUTPUTS_WEBAPP_INT'
+  - stage: staging
+    dependsOn:
+    - common
+    - integration
+    displayName: "webapp - staging"
+    jobs:
+      - deployment: int
+        displayName: "deploy windows webapp"
+        pool:
+          vmImage: $(vmImageName)
+        environment: $(stagingEnvironmentName)  # target environment name and optionally a resource name to record the deployment history; format: <environment-name>.<resource-name>
+        strategy:
+          runOnce:    #rolling, canary are the other strategies that are supported
+            deploy:
+              steps:
+                - checkout: self
+                # deploy linux web app
+                - task: AzureResourceManagerTemplateDeployment@3
+                  displayName: 'app service'
+                  inputs:
+                    deploymentScope: 'Resource Group'
+                    azureResourceManagerConnection: $(azureRMServiceConnection)
+                    subscriptionId: $(subscriptionId)
+                    action: 'Create Or Update Resource Group'
+                    resourceGroupName: $(resourceGroupName)
+                    location: $(resourceGroupLocation)
+                    templateLocation: 'Linked artifact'
+                    csmFile: '$(appServiceWindowsTemplateFilePath)'
+                    csmParametersFile: '$(stagingConfigFilePathAppServiceWindows)'
+                    deploymentMode: 'Incremental'
+                    deploymentOutputs: 'OUTPUTS_WEBAPP_STAGING'
+  - stage: prod
+    condition: and(succeeded(), eq(variables.isMain, true)) # deploy only for main branch, after peer PR check and approval
+    dependsOn:
+    - common
+    - integration
+    - staging
+    displayName: "webapp - prod"
+    jobs:
+      - deployment: int
+        displayName: "deploy windows webapp"
+        pool:
+          vmImage: $(vmImageName)
+        environment: $(prodEnvironmentName)  # target environment name and optionally a resource name to record the deployment history; format: <environment-name>.<resource-name>
+        strategy:
+          runOnce:    #rolling, canary are the other strategies that are supported
+            deploy:
+              steps:
+                - checkout: self
+                # deploy linux web app
+                - task: AzureResourceManagerTemplateDeployment@3
+                  displayName: 'app service'
+                  inputs:
+                    deploymentScope: 'Resource Group'
+                    azureResourceManagerConnection: $(azureRMServiceConnection)
+                    subscriptionId: $(subscriptionId)
+                    action: 'Create Or Update Resource Group'
+                    resourceGroupName: $(resourceGroupName)
+                    location: $(resourceGroupLocation)
+                    templateLocation: 'Linked artifact'
+                    csmFile: '$(appServiceWindowsTemplateFilePath)'
+                    csmParametersFile: '$(prodConfigFilePathAppServiceWindows)'
+                    deploymentMode: 'Incremental'
+                    deploymentOutputs: 'OUTPUTS_WEBAPP_PROD'

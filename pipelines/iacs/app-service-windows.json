@@ -1,0 +1,234 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "WindowsAppServicePlanName": {
+      "metadata": {
+        "description": "The name of the App Service Plan"
+      },
+      "type": "string"
+    },
+    "WindowsAppServiceName": {
+      "metadata": {
+        "description": "The name of the App Service"
+      },
+      "type": "string"
+    },
+    "WindowsAppServiceLocation": {
+      "metadata": {
+        "description": "The location of the App Service"
+      },
+      "type": "string"
+    },
+    "WindowsAppServiceAppInsightsInstrumentationKey": {
+      "metadata": {
+        "description": "The Application Insights Instrumentation Key of instance connected to the App Service"
+      },
+      "type": "string"
+    },
+    "WindowsAppServicePhpVersion": {
+      "metadata": {
+        "description": "The version of PHP on Windows Machines"
+      },
+      "type": "string",
+      "defaultValue": ""
+    },
+    "WindowsAppServicePythonVersion": {
+      "metadata": {
+        "description": "The version of Python on Windows Machines"
+      },
+      "type": "string",
+      "defaultValue": ""
+    },
+    "WindowsAppServiceNodeVersion": {
+      "metadata": {
+        "description": "The Version of Node.js on Windows Machines"
+      },
+      "type": "string",
+      "defaultValue": "6.9"
+    },
+    "WindowsAppServiceJavaVersion": {
+      "metadata": {
+        "description": "The Java Version on Windows Machines"
+      },
+      "type": "string",
+      "defaultValue": ""
+    },
+    "WindowsAppServiceJavaContainer": {
+      "metadata": {
+        "description": "The Java Container on Windows Machines"
+      },
+      "type": "string",
+      "defaultValue": ""
+    },
+    "WindowsAppServiceJavaContainerVersion": {
+      "metadata": {
+        "description": "The Java Container Version on Windows Machines"
+      },
+      "type": "string",
+      "defaultValue": ""
+    },
+    "WindowsAppServiceHTTPS": {
+      "metadata": {
+        "description": "Configures a web site to accept only https requests. Issues redirect for http requests",
+        "mandatory": "true"
+      },
+      "type": "bool",
+      "defaultValue": true
+    },
+    "WindowsAppServiceAlwaysOn": {
+      "metadata": {
+        "description": "Indicates that your web app needs to be loaded at all times. By default, web apps are unloaded after they have been idle. It is recommended that you enable this option when you have continuous web jobs running on the web app.",
+        "mandatory": "true"
+      },
+      "type": "bool",
+      "defaultValue": true
+    },
+    "WindowsAppServiceAppSettings": {
+      "metadata": {
+        "description": "Define App Settings to be included.",
+        "mandatory": "false"
+      },
+      "type": "object",
+      "defaultValue": {
+      }
+    },
+    "WindowsAppServiceAuthenticationADApplicationId": {
+      "metadata": {
+        "description": "These settings allow users to sign in with Azure Active Directory",
+        "mandatory": "false"
+      },
+      "type": "string",
+      "defaultValue": ""
+    },
+    "WindowsAppServiceManagedServiceIdentityEnabled": {
+      "metadata": {
+        "description": "Enables the usage of Managed Service Identities in App Service",
+        "mandatory": "false"
+      },
+      "type": "bool",
+      "defaultValue": true
+    }
+  },
+  "variables": {
+    "appServiceKind": "app",
+    "AADApplicationSecret": "null",
+    "azureADAuthenticationProperties": {
+      "enabled": true,
+      "httpApiPrefixPath": null,
+      "unauthenticatedClientAction": 0,
+      "tokenStoreEnabled": true,
+      "allowedExternalRedirectUrls": null,
+      "defaultProvider": 0,
+      "clientId": "[parameters('WindowsAppServiceAuthenticationADApplicationId')]",
+      "clientSecret": "[if(equals(variables('AADApplicationSecret'),'null'),json('null'),if(empty(variables('AADApplicationSecret')), json('null'), variables('AADApplicationSecret')))]",
+      "issuer": "[concat('https://sts.windows.net/', subscription().tenantId)]",
+      "allowedAudiences": null,
+      "additionalLoginParams": null,
+      "isAadAutoProvisioned": false
+    },
+    "nullAuthenticationProperties": {
+      "enabled": false,
+      "unauthenticatedClientAction": 1,
+      "issuer": null,
+      "clientId": null,
+      "clientSecret": null
+    },
+    "nullValue": {
+    },
+    "appServiceOrServicePlan": "[if(bool(parameters('WindowsAppServiceManagedServiceIdentityEnabled')), parameters('WindowsAppServiceName'), parameters('WindowsAppServicePlanName'))]",
+    "appServiceIdentityOrServicePlan": "[if(bool(parameters('WindowsAppServiceManagedServiceIdentityEnabled')), 'identity', 'name')]",
+    "EmptyArray": [],
+    "defaultAppSettings": {
+      "APPINSIGHTS_INSTRUMENTATIONKEY": "[parameters('WindowsAppServiceAppInsightsInstrumentationKey')]",
+      "WEBSITE_NODE_DEFAULT_VERSION": "[parameters('WindowsAppServiceNodeVersion')]"
+    }
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Web/sites",
+      "kind": "[variables('appServiceKind')]",
+      "name": "[concat(parameters('WindowsAppServiceName'))]",
+      "apiVersion": "2018-02-01",
+      "location": "[parameters('WindowsAppServiceLocation')]",
+      "scale": null,
+      "identity": {
+        "type": "[if(parameters('WindowsAppServiceManagedServiceIdentityEnabled'), 'SystemAssigned', 'None')]"
+      },
+      "properties": {
+        "name": "[parameters('WindowsAppServiceName')]",
+        "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('WindowsAppServicePlanName'))]",
+        "reserved": false,
+        "httpsOnly": "[parameters('WindowsAppServiceHTTPS')]"
+      },
+      "resources": [
+        {
+          "apiVersion": "2016-08-01",
+          "name": "authsettings",
+          "type": "config",
+          "dependsOn": [
+            "[concat('Microsoft.Web/sites/', parameters('WindowsAppServiceName'))]",
+            "Microsoft.ApplicationInsights.AzureWebSites"
+          ],
+          "tags": {
+            "displayName": "websiteAuthSettings"
+          },
+          "properties": "[if(empty(parameters('WindowsAppServiceAuthenticationADApplicationId')), variables('nullAuthenticationProperties'), variables('azureADAuthenticationProperties'))]"
+        },
+        {
+          "name": "web",
+          "type": "config",
+          "apiVersion": "2020-09-01",
+          "dependsOn": [
+            "[concat('Microsoft.Web/sites/', parameters('WindowsAppServiceName'))]",
+            "Microsoft.ApplicationInsights.AzureWebSites"
+          ],
+          "properties": {
+            "phpVersion": "[parameters('WindowsAppServicePhpVersion')]",
+            "pythonVersion": "[parameters('WindowsAppServicePythonVersion')]",
+            "javaVersion": "[if(equals(parameters('WindowsAppServiceJavaVersion'),'Off'),'',parameters('WindowsAppServiceJavaVersion'))]",
+            "javaContainer": "[if(equals(parameters('WindowsAppServiceJavaVersion'),'Off'),'',if(equals(parameters('WindowsAppServiceJavaVersion'),''),'',parameters('WindowsAppServiceJavaContainer')))]",
+            "javaContainerVersion": "[if(equals(parameters('WindowsAppServiceJavaVersion'),'Off'),'',if(equals(parameters('WindowsAppServiceJavaVersion'),''),'',parameters('WindowsAppServiceJavaContainerVersion')))]",
+            "minTlsVersion": "1.2",
+            "ftpsState": "Disabled",
+            "alwaysOn": "[parameters('WindowsAppServiceAlwaysOn')]",
+            "httpLoggingEnabled": true,
+            "requestTracingEnabled": true,
+            "detailedErrorLoggingEnabled": true
+          }
+        },
+        {
+          "apiVersion": "2020-06-01",
+          "name": "Microsoft.ApplicationInsights.AzureWebSites",
+          "type": "siteextensions",
+          "dependsOn": [
+            "[resourceId('Microsoft.Web/sites', parameters('WindowsAppServiceName'))]"
+          ],
+          "properties": {
+          }
+        },
+        {
+          "type": "config",
+          "apiVersion": "2020-09-01",
+          "name": "appsettings",
+          "dependsOn": [
+            "[resourceId('Microsoft.Web/sites/', parameters('WindowsAppServiceName'))]",
+            "Microsoft.ApplicationInsights.AzureWebSites"
+          ],
+          "properties": "[union(variables('defaultAppSettings'),parameters('WindowsAppServiceAppSettings'))]"
+
+        }
+      ]
+    }
+  ],
+  "outputs": {
+    "outboundIpAddresses": {
+      "type": "string",
+      "value": "[replace(replace(string(split(reference(parameters('WindowsAppServiceName')).outboundIpAddresses,',')),'[',''),']','')]"
+    },
+    "identity": {
+      "type": "object",
+      "value": "[if(parameters('WindowsAppServiceManagedServiceIdentityEnabled'), reference(variables('appServiceOrServicePlan'), '2018-02-01', 'Full')[variables('appServiceIdentityOrServicePlan')], variables('nullValue'))]"
+    }
+  }
+}

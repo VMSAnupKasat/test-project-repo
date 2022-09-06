@@ -1,0 +1,35 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.1",
+    "parameters": {
+        "WindowsAppServiceName": {
+            "value": "evergreenip-staging"
+        },
+        "WindowsAppServicePlanName": {
+            "value": "egipsp"
+        },
+        "WindowsAppServiceLocation": {
+            "value": "WestEurope"
+        },
+        "WindowsAppServiceAppInsightsInstrumentationKey": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/4d186e10-e0a0-4555-a97f-7c8c2272d741/resourceGroups/Evergreen-Delivery-IP/providers/Microsoft.KeyVault/vaults/egipkv"
+                },
+                "secretName": "egipai-instrumentation-key"
+            }
+        },
+        "WindowsAppServiceHTTPS": {
+            "value": true
+        },
+        "WindowsAppServiceAlwaysOn": {
+            "value": false
+        },
+        "WindowsAppServiceAuthenticationADApplicationId": {
+            "value": "2309c8a4-4bce-42cf-923a-2d92ea5ccdd3"
+        },
+        "WindowsAppServiceManagedServiceIdentityEnabled": {
+            "value": false
+        }
+    }
+}
