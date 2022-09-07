@@ -2,30 +2,30 @@
   "build": {
     "content": [
       {
-        "src": "docs/",
-        "files": ["**/*.{md,yml}"],
+        "src": "docs2/",
+        "files": [ "**/*.{md,yml}" ],
         "dest": "."
       }
     ],
     "resource": [
       {
-        "src": "docs/",
-        "files": ["**/*.{jpg,jpeg,png,bmp,gif,svg}"],
+        "src": "docs2/",
+        "files": [ "**/*.{jpg,jpeg,png,bmp,gif,svg}" ],
         "dest": "."
       }
     ],
     "externalReference": [],
-    "dest": "",
+    "dest": "_site",
     "title": "Evergreen Delivery IP",
-    "template": ["default", "docfx/templates/egip"],
+    "template": [ "default", "../docfx/templates/egip" ],
     "serve": false,
     "globalMetadata": {
       "_appTitle": "Evergreen Delivery IP",
       "_disableContribution": false,
       "_disableBreadcrumb": true,
       "_gitContribute": {
-        "repo": "https://dev.azure.com/servicescode-test/TCS-Test-Project/_git/DocsAsCode",
-        "branch": "main"
+        "repo": "https://servicesdocs.visualstudio.com/Chrysalis/_git/ChrysalisHelp",
+        "branch": "docfx_evergreen_docs"
       }
     }
   }
