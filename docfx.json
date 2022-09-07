@@ -21,12 +21,7 @@
     "serve": false,
     "globalMetadata": {
       "_appTitle": "Evergreen Delivery IP",
-      "_disableContribution": false,
-      "_disableBreadcrumb": true,
-      "_gitContribute": {
-        "repo": "https://dev.azure.com/servicescode-test/TCS-Test-Project/_git/DocsAsCode",
-        "branch": "evergreen-docs"
-      }
+      "_disableContribution": false
     }
   }
 }
