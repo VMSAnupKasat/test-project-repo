@@ -1,5 +1,5 @@
 # Diverse Delivery IP
-
+ACAI domain teams
 ACAI domain teams work on different IP assets that can range from documentation of processes to scripts and code components that are used in deploying customer solutions. Due to this variety of different assets, one size (approach) cannot fit all teams.
 
 Also it is important that existing assets that have built some time ago can gradually be on-boarded and start benefitting from evergreen delivery IP elements over time.
