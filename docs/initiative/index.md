@@ -3,6 +3,14 @@ Evergreen Delivery IP is ACAI CTO driven program to improve the way CTO and fiel
 
 ## Goals
 
+
+Evergreen Delivery IP is ACAI CTO driven program to improve the way CTO and field teams are finding, reusing, becoming contributors and leading evolution of managed and community IP.
+
+## Goals
+Evergreen Delivery IP is ACAI CTO driven program to improve the way CTO and field teams are finding, reusing, becoming contributors and leading evolution of managed and community IP.
+
+## Goals
+
 Specific high level goals of the program are:
 
 ### Harmonize processes, Taxonomy and tools used
