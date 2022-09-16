@@ -2,27 +2,41 @@
   "build": {
     "content": [
       {
-        "src": "../docs/",
-        "files": ["**/*.{md,yml}"],
-        "dest": "."
+        "files": [
+          "Index.md",
+          "toc.yml",
+          "unity.md",
+          "ingredient1.md",
+          "ingredient2.md",
+          "ingredient3.md",
+          "ingredient4.md"
+        ]
       }
     ],
     "resource": [
       {
-        "src": "../docs/",
-        "files": ["**/*.{jpg,jpeg,png,bmp,gif,svg}"],
-        "dest": "."
+        "src": "../",
+        "files": [
+          "images/**",
+          "logo.svg",
+          "favicon.ico"          
+        ]
       }
     ],
-    "externalReference": [],
-    "dest": "",
-    "title": "Product Innovation Development Services",
-    "template": ["default", "templates/pids"],
+    "dest": "_site",
+    "title": "CI Innovation Cookbook Ingredients",
+    "template": ["default", "../templates/material"],
+    "postProcessors": ["ExtractSearchIndex"],
+    "cleanupCacheHistory": true,
+    "disableGitFeatures": false,
     "serve": false,
     "globalMetadata": {
-      "_appTitle": "Product Innovation Development Services",
-      "_gitUrlPattern": "vso",
+      "_appTitle": "CI Innovation Cookbook",
+      "_enableSearch": true,
+      "_disableContribution": true,
+      "_disableBreadcrumb": true,
       "_gitContribute": {
+        "repo": "https://chrysalis-innersource.visualstudio.com/defaultcollection/_git/Innovation%20Cookbook",
         "branch": "main"
       }
     }
