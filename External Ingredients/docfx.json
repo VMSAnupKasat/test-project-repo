@@ -1,0 +1,30 @@
+{
+  "build": {
+    "content": [
+      {
+        "src": "../docs/",
+        "files": ["**/*.{md,yml}"],
+        "dest": "."
+      }
+    ],
+    "resource": [
+      {
+        "src": "../docs/",
+        "files": ["**/*.{jpg,jpeg,png,bmp,gif,svg}"],
+        "dest": "."
+      }
+    ],
+    "externalReference": [],
+    "dest": "",
+    "title": "Product Innovation Development Services",
+    "template": ["default", "templates/pids"],
+    "serve": false,
+    "globalMetadata": {
+      "_appTitle": "Product Innovation Development Services",
+      "_gitUrlPattern": "vso",
+      "_gitContribute": {
+        "branch": "main"
+      }
+    }
+  }
+}
