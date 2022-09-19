@@ -179,6 +179,7 @@
                     </small>
                 </center>
             </td>
+            <td width="3.3%" style="border:0px" />
             <td width="15.5%" style="border:0px">
                 <center>
                     <small><a href="https://aka.ms/Chrysalis-My-InnerSource?fullScreen=true">Learn more about
