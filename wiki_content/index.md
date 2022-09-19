@@ -86,7 +86,7 @@
             <table width="100%">
                 <tr>
                     <td width="80%" style="background-color:#05529c;color:#fff">
-                        <a style="text-decoration:none;color:#fff" href=https://aka.ms/Using-Chrysalis?fullScreen=true">
+                        <a style="text-decoration:none;color:#fff" href"https://aka.ms/Using-Chrysalis?fullScreen=true">
                             <center>
                                 Learn how to use Chrysalis
                             </center>
