@@ -1,0 +1,113 @@
+- name: Using Chrysalis
+  href: Index.md
+- name: Home
+  href: Home/home.md
+- name: Assets
+  href: Assets/Index.md
+  items:
+   - name: Explore Assets
+     href: Assets/Explore-Assets.md
+   - name: Editing an Asset
+     href: Assets/Editing-an-Asset.md
+   - name: Register Asset Usage
+     href: Assets/Register-Asset-Usage.md
+   - name: Viewing Document Content- Docs as Code
+     href: Assets/Viewing Document Content- Docs as Code.md
+   - name: Viewing the Registered Usages from Asset page
+     href: Assets/Viewing-the-Registered-Usages-from-Asset-page.md
+   - name: Trending Assets
+     href: Assets/Trending-Assets.md
+   - name: Adding an Asset
+     href: Assets/Adding-an-Asset.md
+     items:
+      - name: Code Artifact
+        href: Assets/Adding-an-Asset/Code-Artifact.md
+      - name: Docs as Code
+        href: Assets/Adding-an-Asset/Docs-as-Code.md
+      - name: Document Template
+        href: Assets/Adding-an-Asset/Document-Template.md
+      - name: Guidance
+        href: Assets/Adding-an-Asset/Guidance.md
+      - name: IP Component
+        href: Assets/Adding-an-Asset/IP-Component.md
+      - name: IP Package
+        href: Assets/Adding-an-Asset/IP-Package.md
+      - name: Others
+        href: Assets/Adding-an-Asset/Others.md
+      - name: Tool
+        href: Assets/Adding-an-Asset/Tool.md
+      - name: Using Manifest Public File
+        href: Assets/Adding-an-Asset/Using-Manifest-Public-File.md
+   - name: Asset Detail Page
+     href: Assets/Asset-detail-Page.md
+     items:
+      - name: Analyze Extract and Download IP
+        href: Assets/Asset-detail-page/Analyze-Extract-and-Download-IP.md
+      - name: Approving IP Package and IP Component
+        href: Assets/Asset-detail-page/Approving-IP-Package-&-IP-Component.md
+      - name: Bootstrap History
+        href: Assets/Asset-detail-page/Bootstrap-history-tab.md
+      - name: Create New Version of IP package and IP component
+        href: Assets/Asset-detail-page/Create-New-Version-of-IP-package-&-IP-component.md
+      - name: Standalone Bootstrap
+        href: Assets/Asset-detail-page/Standalone-Bootstrap.md
+      - name: Versioning of IP Package and IP Component
+        href: Assets/Asset-detail-page/Versioning-of-IP-Package-and-IP-Component.md
+- name: Bootstrap IP
+  href: Bootstrap-IP--(Bootstrap-Portal)/Index.md
+  items:
+   - name: Add Engagement
+     href: Bootstrap-IP--(Bootstrap-Portal)/Add-Engagement.md
+   - name: Engagement Users
+     href: Bootstrap-IP--(Bootstrap-Portal)/Engagement-Users.md
+   - name: Selecting IP Packages and IP Components for an Engagement ID
+     href: Bootstrap-IP--(Bootstrap-Portal)/Selecting-IP-Packages-and-IP-Components-for-an-Engagement-ID.md
+   - name: Bootstrap Engagement
+     href: Bootstrap-IP--(Bootstrap-Portal)/Bootstrap-Engagement.md
+   - name: Bootstrap History
+     href: Bootstrap-IP--(Bootstrap-Portal)/Bootstrap-History.md
+- name: Ideas
+  href: ideas/Index.md
+  items:
+   - name: Explore Ideas
+     href: ideas/Explore-Ideas.md
+   - name: Post Idea
+     href: ideas/Post-Idea.md
+   - name: Creating Project from an Idea
+     href: ideas/Creating-Project-from-an-Idea.md
+   - name: Associate Ideas to a Project
+     href: ideas/Associate-Ideas-to-a-Project.md
+   - name: Vote an Idea
+     href: ideas/Vote-an-Idea.md
+- name: Insights
+  href: Insights/Index.md
+  items:
+   - name: Reports
+     href: Insights/Reports.md
+- name: Projects
+  href: Projects/Index.md
+  items:
+   - name: Explore Projects
+     href: Projects/Explore-Projects.md
+   - name: Creating a Project
+     href: Projects/Creating-a-Project.md
+   - name: Selecting Project Type
+     href: Projects/Selecting-Project-Type.md
+   - name: Editing a Project
+     href: Projects/Editing-a-Project.md
+   - name: Associate Assets to a Project
+     href: Projects/Associate-Assets-to-a-Project.md
+   - name: Requesting for Volunteer
+     href: Projects/Requesting-for-Volunteer.md
+   - name: Join a Project
+     href: Projects/Join-a-Project.md
+- name: RBAC- Managing Admin Users
+  href: RBAC- Managing Admin Users/Index.md
+- name: Social Capabilities of an Asset
+  href: Social-Capabilities-of-an-Asset/Social-Capabilities-of-an-Asset.md
+  items:
+   - name: Post and Edit comments
+     href: Social-Capabilities-of-an-Asset/Post-and-Edit-comments.md
+
+
+
