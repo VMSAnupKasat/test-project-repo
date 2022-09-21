@@ -2,7 +2,6 @@
 
 Evergreen Delivery IP is ACAI CTO driven program to improve the way CTO and field teams are finding, reusing, becoming contributors and leading evolution of managed and community IP.
 
-Hi Hello
 
 ## Goals
 
