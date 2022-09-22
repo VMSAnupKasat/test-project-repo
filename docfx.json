@@ -2,14 +2,14 @@
   "build": {
     "content": [
       {
-        "src": "../docs/",
+        "src": "docs/",
         "files": ["**/*.{md,yml}"],
         "dest": "."
       }
     ],
     "resource": [
       {
-        "src": "../docs/",
+        "src": "docs/",
         "files": ["**/*.{jpg,jpeg,png,bmp,gif,svg}"],
         "dest": "."
       }
@@ -21,12 +21,7 @@
     "serve": false,
     "globalMetadata": {
        "_appTitle": "Chrysalis Help document",
-      "_disableContribution": false,
-      "_disableBreadcrumb": true,
-      "_gitContribute": {
-        "repo": "https://dev.azure.com/servicescode-test/TCS-Test-Project/_git/DocsAsCode",
-        "branch": "chrysalis-wiki-help"
-      }
+      "_disableContribution": false
     }
   }
 }
