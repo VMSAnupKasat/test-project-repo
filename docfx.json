@@ -2,14 +2,14 @@
   "build": {
     "content": [
       {
-        "src": "wiki_content/",
+        "src": "docs/",
         "files": [ "**/*.{md,yml}" ],
         "dest": "."
       }
     ],
     "resource": [
       {
-        "src": "wiki_content/",
+        "src": "docs/",
         "files": [ "**/*.{jpg,jpeg,png,bmp,gif,svg}" ],
         "dest": "."
       }
