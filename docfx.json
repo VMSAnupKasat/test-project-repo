@@ -2,14 +2,14 @@
   "build": {
     "content": [
       {
-        "src": "docs111/",
+        
         "files": ["**/*.{md,yml}"],
         "dest": "."
       }
     ],
     "resource": [
       {
-        "src": "docs/",
+        
         "files": ["**/*.{jpg,jpeg,png,bmp,gif,svg}"],
         "dest": "."
       }
