@@ -6,7 +6,7 @@
 
 - When the user clicks any of these InnerSource-(Ideas, Project, and Assets), it will open a new page that displays detailed information on the specific selection.
 
-![Innersource.png](/attachments/Innersource-17a12cc5-1690-4f32-81bc-6d89a7a0d08e.png)
+![Innersource.png](/docs/attachments/Innersource-17a12cc5-1690-4f32-81bc-6d89a7a0d08e.png)
 
 
 
