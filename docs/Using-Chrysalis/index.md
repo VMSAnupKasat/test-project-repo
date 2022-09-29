@@ -10,51 +10,51 @@
 
 - [Explore Ideas](../Using-Chrysalis/../Ideas/Explore-Ideas.md)
 
-- [Post Idea](/Using-Chrysalis/Ideas/Post-Idea.html)
+- [Post Idea](../Using-Chrysalis/../Ideas/Post-Idea.md)
 
-- [Creating Project from an Idea](/Using-Chrysalis/Ideas/Creating-Project-from-an-Idea.html)
+- [Creating Project from an Idea](../Using-Chrysalis/../Ideas/Creating-Project-from-an-Idea.md)
 
-- [Associate Ideas to a Project](/Using-Chrysalis/Projects/Associate-Assets-to-a-Project.html)
+- [Associate Ideas to a Project](../Using-Chrysalis/../Projects/Associate-Assets-to-a-Project.md)
 
 
-- [Vote an Idea](/Using-Chrysalis/Ideas/Vote-an-Idea.html)
+- [Vote an Idea](../Using-Chrysalis/../Ideas/Vote-an-Idea.md)
 
 **[Projects](/Using-Chrysalis/Projects)**
 
-- [Explore Projects](/Using-Chrysalis/Projects/Explore-Projects.html)
+- [Explore Projects](../Using-Chrysalis/../Projects/Explore-Projects.md)
 
-- [Creating a Project](/Using-Chrysalis/Projects/Creating-a-Project.html)
+- [Creating a Project](../Using-Chrysalis/../Projects/Creating-a-Project.md)
 
-- [Selecting Project Type](/Using-Chrysalis/Projects/Selecting-Project-Type.html)
+- [Selecting Project Type](../Using-Chrysalis/../Projects/Selecting-Project-Type.md)
 
-- [Editing a Project](/Using-Chrysalis/Projects/Editing-a-Project.html)
+- [Editing a Project](../Using-Chrysalis/../Projects/Editing-a-Project.md)
 
-- [Associate Assets to a Project](/Using-Chrysalis/Projects/Associate-Assets-to-a-Project.html)
+- [Associate Assets to a Project](../Using-Chrysalis/../Projects/Associate-Assets-to-a-Project.md)
 
-- [Requesting for Volunteer](/Using-Chrysalis/Projects/Requesting-for-Volunteer.html)
+- [Requesting for Volunteer](../Using-Chrysalis/../Projects/Requesting-for-Volunteer.md)
 
-- [Join a Project to contribute](/Using-Chrysalis/Projects/Join-a-Project.html)
+- [Join a Project to contribute](../Using-Chrysalis/../Projects/Join-a-Project.md)
 
 
 **[Assets](/Using-Chrysalis/Assets)**
 
-- [Adding an Asset](/Using-Chrysalis/Assets/Adding-an-Asset.html)
+- [Adding an Asset](../Using-Chrysalis/../Assets/Adding-an-Asset.md)
 
-- [Explore Assets](/Using-Chrysalis/Assets/Explore-Assets.html)
+- [Explore Assets](../Using-Chrysalis/../Assets/Explore-Assets.md)
 
-- [View Document Content](/Using-Chrysalis/Assets/Viewing-Document-Content%2D-Docs-as-Code.html)
+- [View Document Content](../Using-Chrysalis/../Assets/Viewing-Document-Content%2D-Docs-as-Code.md)
 
-- [Editing an Asset](/Using-Chrysalis/Assets/Editing-an-Asset.html)
+- [Editing an Asset](../Using-Chrysalis/../Assets/Editing-an-Asset.md)
 
-- [Register Asset Usage](/Using-Chrysalis/Assets/Register-Asset-Usage.html)
+- [Register Asset Usage](../Using-Chrysalis/../Assets/Register-Asset-Usage.md)
 
-- [View Asset Usage](/Using-Chrysalis/Assets/Viewing-the-Registered-Usages-from-Asset-page.html)
+- [View Asset Usage](../Using-Chrysalis/../Assets/Viewing-the-Registered-Usages-from-Asset-page.md)
 
-- [Trending Assets](/Using-Chrysalis/Assets/Trending-Assets.html)
+- [Trending Assets](../Using-Chrysalis/../Assets/Trending-Assets.md)
 
 **[Insights](/Using-Chrysalis/Insights)**
 
-- [Reports](/Using-Chrysalis/Insights/Reports.html) 
+- [Reports](../Using-Chrysalis/../Insights/Reports.md) 
 </br>
 </br>
 </br>
