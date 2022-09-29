@@ -8,7 +8,7 @@ In a nutshell, the home page of Chrysalis includes Ideas, Projects, and Assets. 
 
 [**_About Chrysalis_**](/About-Chrysalis), 
 
-![h12.PNG](/attachments/h12-3856b551-0ed1-4f32-9f7a-2a3d0811ddaa.PNG)!
+![h12.PNG](/docs/attachments/h12-3856b551-0ed1-4f32-9f7a-2a3d0811ddaa.PNG)!
 
 
 
