@@ -14,7 +14,7 @@ Chrysalis platform has three major entities viz., Ideas, Projects and Assets. Th
 
 In a nutshell, Chrysalis platform can be represented as the following
 
-![ChrysalisExperience.png](/attachments/ChrysalisExperience-aae48e6f-b0f0-4cf6-b5b5-fd1153d86831.png)
+![ChrysalisExperience.png](/docs/attachments/ChrysalisExperience-aae48e6f-b0f0-4cf6-b5b5-fd1153d86831.png)
  
 
 ## Why Chrysalis
