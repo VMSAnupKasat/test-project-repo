@@ -8,7 +8,7 @@
 
 **[Ideas](/Using-Chrysalis/Ideas)**
 
-- [Explore Ideas](/Using-Chrysalis/Ideas/Explore-Ideas.html)
+- [Explore Ideas](../Using-Chrysalis/../Ideas/Explore-Ideas.md)
 
 - [Post Idea](/Using-Chrysalis/Ideas/Post-Idea.html)
 
