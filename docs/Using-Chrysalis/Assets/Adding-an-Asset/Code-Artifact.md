@@ -2,7 +2,7 @@
 
 Below are the steps to create a new asset as- Code Artifact type:
 
-- Browse to _**[Chrysalis,](https://aka.ms/chrysalis)**, select **Explore Assets** from Assets menu.
+- Browse to _**[Chrysalis,](https://aka.ms/chrysalis){:target="_blank"}**, select **Explore Assets** from Assets menu.
 
 - Click the **Add Asset** button and select **Code Artifact** from the Asset Type dropdown.
 
