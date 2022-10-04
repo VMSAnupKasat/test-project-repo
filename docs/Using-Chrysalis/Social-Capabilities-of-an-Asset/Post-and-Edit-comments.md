@@ -19,7 +19,7 @@ With the Post and Edit Comment option, you can convey your interest, suggestions
 
 5. Click the **Reply** button under the **Recent** tab and you can reply to other users' comments.
 
-![veredit4.png](attachments/veredit4-e67f7d32-3796-45b3-b1ba-15165097f857.png)
+![veredit4.png](docs/attachments/veredit4-e67f7d32-3796-45b3-b1ba-15165097f857.png)
 
 6. You can like or unlike the comment using the **Like** icon. 
 
