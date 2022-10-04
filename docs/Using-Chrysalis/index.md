@@ -8,53 +8,53 @@
 
 **[Ideas](/Using-Chrysalis/Ideas)**
 
-- [Explore Ideas](../Using-Chrysalis/../Ideas/Explore-Ideas.md)
+- [Explore Ideas](Ideas/Explore-Ideas.md)
 
-- [Post Idea](../Using-Chrysalis/../Ideas/Post-Idea.md)
+- [Post Idea](Ideas/Post-Idea.md)
 
-- [Creating Project from an Idea](../Using-Chrysalis/../Ideas/Creating-Project-from-an-Idea.md)
+- [Creating Project from an Idea](Ideas/Creating-Project-from-an-Idea.md)
 
-- [Associate Ideas to a Project](../Using-Chrysalis/../Projects/Associate-Assets-to-a-Project.md)
+- [Associate Ideas to a Project](Ideas/Associate-Ideas-to-a-Project.md)
 
 
-- [Vote an Idea](../Using-Chrysalis/../Ideas/Vote-an-Idea.md)
+- [Vote an Idea](Ideas/Vote-an-Idea.md)
 
 **[Projects](/Using-Chrysalis/Projects)**
 
-- [Explore Projects](../Using-Chrysalis/../Projects/Explore-Projects.md)
+- [Explore Projects](Projects/Explore-Projects.md)
 
-- [Creating a Project](../Using-Chrysalis/../Projects/Creating-a-Project.md)
+- [Creating a Project](Projects/Creating-a-Project.md)
 
-- [Selecting Project Type](../Using-Chrysalis/../Projects/Selecting-Project-Type.md)
+- [Selecting Project Type](Projects/Selecting-Project-Type.md)
 
-- [Editing a Project](../Using-Chrysalis/../Projects/Editing-a-Project.md)
+- [Editing a Project](Projects/Editing-a-Project.md)
 
-- [Associate Assets to a Project](../Using-Chrysalis/../Projects/Associate-Assets-to-a-Project.md)
+- [Associate Assets to a Project](Projects/Associate-Assets-to-a-Project.md)
 
-- [Requesting for Volunteer](../Using-Chrysalis/../Projects/Requesting-for-Volunteer.md)
+- [Requesting for Volunteer](Projects/Requesting-for-Volunteer.md)
 
-- [Join a Project to contribute](../Using-Chrysalis/../Projects/Join-a-Project.md)
+- [Join a Project to contribute](Projects/Join-a-Project.md)
 
 
 **[Assets](/Using-Chrysalis/Assets)**
 
-- [Adding an Asset](../Using-Chrysalis/../Assets/Adding-an-Asset.md)
+- [Adding an Asset](Assets/Adding-an-Asset.md)
 
-- [Explore Assets](../Using-Chrysalis/../Assets/Explore-Assets.md)
+- [Explore Assets](Assets/Explore-Assets.md)
 
-- [View Document Content](../Using-Chrysalis/../Assets/Viewing-Document-Content%2D-Docs-as-Code.md)
+- [View Document Content](Assets/Viewing-Document-Content%2D-Docs-as-Code.md)
 
-- [Editing an Asset](../Using-Chrysalis/../Assets/Editing-an-Asset.md)
+- [Editing an Asset](Assets/Editing-an-Asset.md)
 
-- [Register Asset Usage](../Using-Chrysalis/../Assets/Register-Asset-Usage.md)
+- [Register Asset Usage](Assets/Register-Asset-Usage.md)
 
-- [View Asset Usage](../Using-Chrysalis/../Assets/Viewing-the-Registered-Usages-from-Asset-page.md)
+- [View Asset Usage](Assets/Viewing-the-Registered-Usages-from-Asset-page.md)
 
-- [Trending Assets](../Using-Chrysalis/../Assets/Trending-Assets.md)
+- [Trending Assets](Assets/Trending-Assets.md)
 
 **[Insights](/Using-Chrysalis/Insights)**
 
-- [Reports](../Using-Chrysalis/../Insights/Reports.md) 
+- [Reports](Insights/Reports.md) 
 </br>
 </br>
 </br>
