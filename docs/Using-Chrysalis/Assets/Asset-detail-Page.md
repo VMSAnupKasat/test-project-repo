@@ -40,7 +40,7 @@ The Bootstrap History tab is visible for Assest Type: IP Package/ IP Component.
 
 You can use it to extract the history of all versions of the selected assets, including Standalone and Engagement Bootstrap history.
 
-[**_Bootstrap History_**](https://aka.ms/Bootstrap-History)
+[**_Bootstrap History_**](/docs/Using-Chrysalis/Assets/Asset-detail-Page/Bootstrap-history-tab.md)
 
 Apart from the above tabs, you also have an option to download the Asset metadata along with the enablers if any using the Export icon.
 
