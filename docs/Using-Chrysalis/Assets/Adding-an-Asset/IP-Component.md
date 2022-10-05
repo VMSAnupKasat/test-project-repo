@@ -2,7 +2,7 @@
 
 Below are the steps to create a new asset as- IP Component type:
 
-- Browse to _**[Chrysalis](https://aka.ms/chrysalis)**_, select **Explore Assets** from Assets menu.
+- Browse to _**[Chrysalis](https://aka.ms/chrysalis/ target="_blank")**_, select **Explore Assets** from Assets menu.
 
 - Click the **Add Asset** button and select **IP Component** from the Asset Type dropdown.
 
