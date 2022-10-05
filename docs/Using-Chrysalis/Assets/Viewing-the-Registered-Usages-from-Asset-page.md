@@ -8,7 +8,7 @@ When you select the Register Usages under the About section from the (asset titl
 
 - Select **Explore Assets** from the Assets dropdown. 
 
-- Search for the (Asset title) using [_**Explore Assets.**_](https://aka.ms/Explore-Assets)
+- Search for the (Asset title) using [_**Explore Assets.**_](/docs/Using-Chrysalis/Assets/Explore-Assets.md)
 
 - Select the (Asset title) from the search list, and on the asset detail page, click **Registered Usages** on the top right side under the About section.
 
@@ -16,7 +16,7 @@ When you select the Register Usages under the About section from the (asset titl
 
 - When you have an engagement that is bootstrapped successfully from the engagement details page, those engagement ids will get auto captured in Registered Usages under the About section on the asset detail page.
 
-![register usage1.png](/attachments/register%20usage1-612f4094-991f-4e39-b924-68cd481589fa.png)
+![register usage1.png](/docs/attachments/register%20usage1-612f4094-991f-4e39-b924-68cd481589fa.png)
 
 - Any engagement IDs successfully bootstrapped under the engagement details page will be displayed at the bottom under the Register Usage tab of the asset detail page.
 
