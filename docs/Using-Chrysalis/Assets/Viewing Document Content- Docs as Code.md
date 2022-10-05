@@ -2,7 +2,7 @@
 </br>
 # Viewing Document Content- Docs as Code
 
-You can select the asset (Docs as code) using **_[Explore Assets](https://aka.ms/Explore-Assets)_** and browse the index to find the desired topic within the content.
+You can select the asset (Docs as code) using **_[Explore Assets](/docs/Using-Chrysalis/Assets/Explore-Assets.md)_** and browse the index to find the desired topic within the content.
 
 
 ## Explore Docs as Code:
