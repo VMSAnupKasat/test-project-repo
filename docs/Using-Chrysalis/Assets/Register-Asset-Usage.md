@@ -6,7 +6,7 @@ Following are the steps to register the asset usage:
 
 - Select **Explore Assets** from Assets dropdown.
 
-- Search for the (Asset title) using **_[Explore Asset](https://aka.ms/Explore-Assets)_**.
+- Search for the (Asset title) using **_[Explore Asset](/docs/Using-Chrysalis/Assets/Explore-Assets.md)_**.
 
 - Select the (Asset title) from the search list, and on the asset detail page, click **Register Usage** from the right pane under the **About** section. 
 
