@@ -7,7 +7,7 @@ Below are the steps to create a new asset as- IP Component type:
 - Click the **Add Asset** button and select **IP Component** from the Asset Type dropdown.
 
  `Note:` 
-You can create an IP component by uploading file from your local drive or by entering the URL of a **_[manifest public file](https://aka.ms/Using-Manifest)_** - 
+You can create an IP component by uploading file from your local drive or by entering the URL of a **_[manifest public file](/docs/Using-Chrysalis/Assets/Adding-an-Asset/Using-Manifest-Public-File.md)_** - 
 
 - Enter the URL in the **Asset URL** box.
 
