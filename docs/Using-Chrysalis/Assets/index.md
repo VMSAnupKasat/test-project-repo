@@ -24,7 +24,7 @@ tbody{
    <tr style="background-color:#037ac4;border:0px">
 <td width="2.5%" style="border:0px"/>
       <td width="18%" style="border:0px">
-         <a style="color:#fff" href="https://aka.ms/About-Chrysalis">
+         <a style="color:#fff" href="About-Chrysalis/About-Chrysalis.html">
          <big>
             <center>
             &#10003; 
@@ -33,7 +33,7 @@ tbody{
          About Chrysalis 
       </td>
       <td width="19%" style="border:0px">
-         <a style="color:#fff" href="https://aka.ms/InnerSource-Guidance">
+         <a style="color:#fff" href="InnerSource-Guidance/Index.html">
          <big>
             <center>
             &#9783; 
@@ -60,7 +60,7 @@ tbody{
          Feedback
       </td>
        <td width="19%" style="border:0px">
-         <a style="color:#fff" href="https://aka.ms/Chrysalis-Roadmap	">
+         <a style="color:#fff" href="/Roadmap.html">
          <big>
             <center>
            &#9736;
@@ -85,7 +85,7 @@ Chrysalis Assets are the tangible and re-usable outcomes of your Chrysalis Proje
 </center><br></br>
 <table>
 
-<td width="45%"  style="background-color:#44546A;border:0px;"><a style="color:#fff" href="https://tinyurl.com/3k76hdwm">  Return to Chrysalis help</a></td>
+<td width="45%"  style="background-color:#44546A;border:0px;"><a style="color:#fff" href="/docs/index.md">  Return to Chrysalis help</a></td>
 <td width="55%" style="border:0px"/>
 </table>
 
