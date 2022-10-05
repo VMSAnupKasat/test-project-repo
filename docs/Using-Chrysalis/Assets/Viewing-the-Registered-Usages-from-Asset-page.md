@@ -16,8 +16,6 @@ When you select the Register Usages under the About section from the (asset titl
 
 - When you have an engagement that is bootstrapped successfully from the engagement details page, those engagement ids will get auto captured in Registered Usages under the About section on the asset detail page.
 
-![register usage1.png](/docs/attachments/register%20usage1-612f4094-991f-4e39-b924-68cd481589fa.png)
-
 - Any engagement IDs successfully bootstrapped under the engagement details page will be displayed at the bottom under the Register Usage tab of the asset detail page.
 
 </br>
