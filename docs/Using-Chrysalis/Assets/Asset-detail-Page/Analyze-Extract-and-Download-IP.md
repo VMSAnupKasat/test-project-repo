@@ -23,9 +23,6 @@ The Extract button is visible only for Asset owners or contributors and Chrysali
 
 - Once the Analyze process is successful, you can view the details as shown below:
 
-
-![Analyze.png](/attachments/Analyze-7777ce6b-7e67-48c7-b754-40245e1afd4d.png)
-
 `Note:`
 
 1. **Work Item Query Enabler analysis**: This will show work item types available in WIQ and work item count.
