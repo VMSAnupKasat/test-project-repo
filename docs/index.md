@@ -7,7 +7,7 @@ Evergreen Delivery IP is ACAI CTO driven program to improve the way CTO and fiel
 
 ## About the Initiative
 
-To find more on the initiative itself, the directions of change and short term objective, broader goals, please see [Initiative section](initiative/index.md). This section also includes information on how to contribute, provide feedback, join the team that is working in and promoting [innersource](https://innersourcecommons.org/learn/learning-path/) way of collaborating.
+To find more on the initiative itself,  directions of change and short term objective, broader goals, please see [Initiative section](initiative/index.md). This section also includes information on how to contribute, provide feedback, join the team that is working in and promoting [innersource](https://innersourcecommons.org/learn/learning-path/) way of collaborating.
 
 ## Refresh Content Added
 
