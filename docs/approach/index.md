@@ -8,7 +8,7 @@ This section defines the overall approach suggested for the IP development, inne
 
 ## Principles
 
-The main principles followed by the approach are:
+The main principles followed by the approach are demo test:
 
 - **gradual adoption** to ensure that teams can light up their existing IP assets (repos teams) with Evergreen Delivery approaches and that teams can start their adoption small and then grow as needed
 - **flexibility of adoption** to support different approaches by different teams based on their needs, for example:
