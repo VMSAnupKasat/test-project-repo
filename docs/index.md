@@ -152,7 +152,6 @@
             </td>
         </tr>
         <tr>
-           <td width="3.3%" style="border:0px" />
             <td width="15.5%" style="border:0px">
                 <center>
                     <small><a href="https://tinyurl.com/mvk7bm9k?fullScreen=true" />Learn more about Ideas
