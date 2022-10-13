@@ -11,7 +11,7 @@ To find more on the initiative itself, directions of change and short term objec
 
 ## Refresh Content Added
 
-refresh automatically.New text updated.latest code.commited.
+refresh automatically.New text updated.latest code.commited.Test code details.
 
 ## Approach
 
