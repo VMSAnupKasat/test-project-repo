@@ -11,7 +11,7 @@ To find more on the initiative itself, directions of change and short term objec
 
 ## Refresh Content Added
 
-Added new data.
+Added new data. Draft Trigger Data.
 
 ## Approach
 
