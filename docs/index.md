@@ -21,6 +21,8 @@ The general suggested approach of how ACAI delivery teams should manage the IP e
 - [modular ip asset management](approach/diverse-delivery-ip.md) that should support diverse teams working on different set of IP assets (documentation, reference architecture, data models, scripts, code and components)
 - [sustaining and growing ip contribution culture](approach/contribution-culture/contribution-culture.md) that includes approaches suggested as part of the program to ensure contribution moves from current spots of IP contribution successes to more pervasive focus on IP contribution all up in ACAI.
 
+Modification
+
 ## Guidance
 
 If [Approach section](approach/index.md) defines the "architecture" of the evergreen delivery IP development, management and sustained evolution, then [Guidance section](guidance/index.md) goes into the detailed supporting information and tools to ensure other evergreen delivery teams that want to adopt these approaches have starter kits and learning materials that ensure this is simpler than doing from scratch.
