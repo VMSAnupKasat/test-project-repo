@@ -3,6 +3,9 @@
 This section provides specific guidance on staring with evergreen delivery IP approaches, showcases how to set up the overall team structure and start adopting more and more lenses as a way of enriching the repository as it grows and needs more rich discovery. It can hopefully allow team adopting evergreen principles to avoid some of the blockers (aka ['evergivens'](https://en.wikipedia.org/wiki/Ever_Given#/media/File:Container_Ship_'Ever_Given'_stuck_in_the_Suez_Canal,_Egypt_-_March_24th,_2021_cropped.jpg)) and ensure less effort needs to be invested to set up well working environment.
 
 ## Core
+Dev auto trigger
+
+## Core
 
 First thing to start with making your IP work evergreen is to enable the repo to follow the structure and metadata guidance of the Evergreen Delivery IP. It is combination of aggregated best practices to promote innersource contribution model on one hand, it is specific technical/tools guidance also based on best practices gathered from various MCS teams.
 
