@@ -41,22 +41,25 @@
         "files": [
           "**/*.{md,yml}"
         ],
-        "dest": ".",
         "exclude": [
           "**/bin/**",
           "**/obj/**",
           "_site_pdf/**",
           "pipelines/telemetry/**.yml",
           "pipelines/website/**.yml",
-          "pipelines/infra/**.yml"
+          "pipelines/infra/**.yml",
+          "docs/approach/**.{md,yml}",
+          "docs/guidance/**.{md,yml}",
+          "docs/resources/**.{md,yml}"
         ]
       },
       {
         "files": [
-          "docs/initiative/**.{md,yml}",
-          "docs/approach/**.{md,yml}",
-          "docs/guidance/**.{md,yml}",
-          "docs/resources/**.{md,yml}",
+          "docs/initiative/**.{md,yml}"
+        ]
+      },
+       {
+        "files": [
           "docs/**.{md,yml}"
         ]
       }
