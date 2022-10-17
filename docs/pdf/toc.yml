@@ -1,0 +1,8 @@
+- name: Initiative
+  href: ../initiative/toc.yml
+- name: Approach
+  href: ../approach/toc.yml
+- name: Guidance
+  href: ../guidance/toc.yml
+- name: Resources
+  href: ../resources/toc.yml
