@@ -29,13 +29,13 @@
       }
     }
   },
-  "pdf": {
-        "template": [
-            "pdf.default"
-        ],
-        "keepRawFiles": false,
-        "generatesAppendices": "true",
-        "content":  [
+ "pdf": {
+    "template": [
+      "pdf.default"
+    ],
+    "keepRawFiles": false,
+    "generatesAppendices": "true",
+    "content": [
       {
         "src": "docs/",
         "files": [
@@ -61,34 +61,35 @@
         ]
       }
     ],
-        "resource": [
-            {
-                "src": "docs/",
-                "files": [ "**/*.{jpg,jpeg,png,bmp,gif,svg}" ],
-                "dest": ".",
-                "exclude": [
-                    "**/bin/**",
-                    "**/obj/**",
-                    "_site_pdf/**"
-                ]
-            }
+    "resource": [
+      {
+        "src": "docs/",
+        "files": [
+          "**/*.{jpg,jpeg,png,bmp,gif,svg}"
         ],
-        "overwrite": [
-            {
-                "files": [
-                    "docs/**.md"
-                ],
-                "exclude": [
-                    "**/bin/**",
-                    "**/obj/**",
-                    "_site_pdf/**"
-                ]
-            }
+        "dest": ".",
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "_site_pdf/**"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "docs/**.md"
         ],
-        "wkhtmltopdf": {
-            "additionalArguments": "--enable-local-file-access",
-            "filePath": "C:/home/site/DocFXTool/wkhtmltopdf.exe"
-        },
-        "dest": "_site_pdf"
-    }
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "_site_pdf/**"
+        ]
+      }
+    ],
+    "wkhtmltopdf": {
+      "filePath": "C:/home/site/DocFXTool/wkhtmltopdf.exe"
+    },
+    "dest": "_site_pdf"
+  }
 }
