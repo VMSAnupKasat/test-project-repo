@@ -35,36 +35,32 @@
         ],
         "keepRawFiles": false,
         "generatesAppendices": "true",
-        "content": [
-            {
-                "files": [
-                    "**/**.md",
-                    "toc.yml",
-                    "*.md",
-                    "docs/pdf/toc.yml"
-                ],
-                "exclude": [
-                    "**/bin/**",
-                    "**/obj/**",
-                    "_site_pdf/**",
-                    "pipelines/telemetry/**.yml",
-                    "pipelines/website/**.yml",
-                    "pipelines/infra/**.yml"
-                ]
-            },
-            {
-                "files": [
-                    "docs/initiative/**.{md,yml}",
-                    "docs/approach/**.{md,yml}",
-                    "docs/guidance/**.{md,yml}",
-                    "docs/resources/**.{md,yml}",
-                    "docs/**.md"
-                ]                
-            },            
-            {
-                "files": "docs/pdf/toc.yml"
-            }
+        "content":  [
+      {
+        "src": "docs/",
+        "files": [
+          "**/*.{md,yml}"
         ],
+        "dest": ".",
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "_site_pdf/**",
+          "pipelines/telemetry/**.yml",
+          "pipelines/website/**.yml",
+          "pipelines/infra/**.yml"
+        ]
+      },
+      {
+        "files": [
+          "docs/initiative/**.{md,yml}",
+          "docs/approach/**.{md,yml}",
+          "docs/guidance/**.{md,yml}",
+          "docs/resources/**.{md,yml}",
+          "docs/**.{md,yml}"
+        ]
+      }
+    ],
         "resource": [
             {
                 "src": "docs/",
