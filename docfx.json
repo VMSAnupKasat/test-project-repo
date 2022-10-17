@@ -48,9 +48,12 @@
           "pipelines/telemetry/**.yml",
           "pipelines/website/**.yml",
           "pipelines/infra/**.yml",
-          "docs/approach/toc.{md,yml}",
-          "docs/guidance/toc.{md,yml}",
-          "docs/resources/toc.{md,yml}"
+          "docs/approach/toc.yml",
+          "docs/guidance/toc.yml",
+          "docs/resources/toc.yml",
+          "docs/resources/toc.md",
+          "docs/guidance/toc.md",
+          "docs/approach/toc.md"
         ]
       },
        {
