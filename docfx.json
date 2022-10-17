@@ -91,7 +91,7 @@
         ],
         "wkhtmltopdf": {
             "additionalArguments": "--enable-local-file-access",
-            "filePath": "C:/home/site/wkhtmltopdf.exe"
+            "filePath": "C:/home/site/DocFXTool/wkhtmltopdf.exe"
         },
         "dest": "_site_pdf"
     }
