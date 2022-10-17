@@ -53,14 +53,9 @@
           "docs/resources/**.{md,yml}"
         ]
       },
-      {
-        "files": [
-          "docs/initiative/**.{md,yml}"
-        ]
-      },
        {
         "files": [
-          "docs/**.{md,yml}"
+          "docs/toc.yml"
         ]
       }
     ],
