@@ -46,7 +46,7 @@ Given this Evergreen Delivery IP guidance/approach definition initiative itself 
 
 ![Evergreen Delivery Contribution Options](media/egip-contributing.svg)
 
-Resources:
+Resources -:
 
 - this web site describing the overall approach and guidance
 - [Evergreen Delivery IP Forum team](https://teams.microsoft.com/l/team/19%3a3d51464fa01345f6a79290ac257ead8c%40thread.tacv2/conversations?groupId=ef3294c6-f026-47a2-842e-1881f6f09272&tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47)
