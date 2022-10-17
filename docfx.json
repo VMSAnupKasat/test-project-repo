@@ -90,7 +90,8 @@
             }
         ],
         "wkhtmltopdf": {
-            "additionalArguments": "--enable-local-file-access"
+            "additionalArguments": "--enable-local-file-access",
+            "filePath": "C:/home/site/wkhtmltopdf.exe"
         },
         "dest": "_site_pdf"
     }
