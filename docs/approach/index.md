@@ -24,5 +24,5 @@ The main principles followed by the approach are:
 
 ## Teams Following Evergreen Delivery
 
-To ensure ACAI teams have as easy as possible way of adoption of the principles and approaches defined in this section overall evergreen delivery IP approach relies on implementation [guidance](../guidance/index.md) that is enhanced based on core team priorities, but even more so - based on those implementing approach and providing back feedback and contributions for new tools, lenses and best practices.
+To ensure ACAI teams have as easy as possible way of adoption of the principles and approaches defined in this section overall evergreen delivery IP approach relies on implementation [guidance](../guidance/index.md) that is enhanced based on core team priorities, but even more so - based on those implementing approach and providing back feedback and contributions for new tools, lenses and best practices and team.
 
