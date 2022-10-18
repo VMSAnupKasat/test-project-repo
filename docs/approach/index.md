@@ -1,3 +1,7 @@
+# Auto Trigger
+
+This is auto Trigger demo.
+
 # Overall Approach
 
 This section defines the overall approach suggested for the IP development, innersource community building and discovery of delivery IP. It covers these three main areas looked at at part of the Evergreen Delivery IP initiative:
