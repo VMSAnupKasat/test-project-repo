@@ -25,7 +25,7 @@
       "_disableBreadcrumb": true,
       "_gitContribute": {
         "repo": "https://dev.azure.com/servicescode-test/TCS-Test-Project/_git/DocsAsCode",
-        "branch": "evergreen-docs"
+        "branch": "trigger-demo-evergreen"
       }
     }
   }
