@@ -7,3 +7,7 @@ The main resources are details below :
 - [innersource](innersource.md) introduction and links to relevant learning external and internal learning materials
 - [knowledge management tools](tools.md) relied on for the implementation of the approach
 - [examples](examples.md) of teams adopting Evergreen Delivery IP (and contributing approaches, tools and guidance)
+
+# Trigger Demo
+
+new details added.
