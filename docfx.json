@@ -61,11 +61,7 @@
                     "docs/resources/**.{md,yml}",
                     "docs/**.{md,yml}"
                 ]                
-            },
-            
-      {
-        "files": "docs/pdf/toc.yml"
-      }
+            }
         ],
     "resource": [
       {
