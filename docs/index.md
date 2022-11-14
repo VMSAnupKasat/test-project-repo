@@ -32,7 +32,7 @@
                 </center>
         </td>
         <td width="19%" style="border:0px">
-            <a style="color:#fff" href="InnerSource-Guidance/Index.html">
+            <a style="color:#fff" href="InnerSource-Guidance/index.html">
                 <big>
                     <center>
                         &#9783;
