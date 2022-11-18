@@ -8,7 +8,7 @@ These social capabilities are linked to the Assets which help users leverage the
 - [_View Option for Assets_](#View-Option-for-Assets)
 - [_Vote for an Asset_](#Vote-for-an-Asset)
 - [_Edit and Delete Comments from an Asset_](#Edit-and-Delete-Comments-from-an-Asset)_ 
-- _[Follow and Unfollow an Asset](#Follow-and-Unfollow-an-Asset)_
+- [Follow and Unfollow an Asset](#Follow-and-Unfollow-an-Asset)
 
 
 The Asset detail page has the Share option, which allows you to share the assets with other users. 
