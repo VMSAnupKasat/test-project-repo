@@ -1,1 +1,1 @@
-![Asset Types.png](/.attachments/Asset%20Types-0dc8f6f1-9e4c-43a0-842d-2d5acda7cab4.png)
+![Asset Types.png](/attachments/Asset%20Types-0dc8f6f1-9e4c-43a0-842d-2d5acda7cab4.png)
