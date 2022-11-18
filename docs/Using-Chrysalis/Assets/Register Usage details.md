@@ -1,22 +1,26 @@
 </br>	
 </br>
-# Viewing the Registered Usages from Asset page
+	
+# Register Usage details
 
-When you select the Register Usages under the About section from the (asset title) page, you can view the listed projects link and engagement id details. 
+You can view the Projects and Engagement id details under the Register Usage.
 
-## Following are the steps to view the Registered Usages from the Asset detail page:
+### Reference below the steps to view the Register Usage from the Asset detail page:
 
 - Select **Explore Assets** from the Assets dropdown. 
 
-- Search for the (Asset title) using [_**Explore Assets.**_](/docs/Using-Chrysalis/Assets/Explore-Assets.md)
+- Search for the (Asset title) using [_**Explore Assets.**_](https://aka.ms/Explore-Assets)
 
 - Select the (Asset title) from the search list, and on the asset detail page, click **Registered Usages** on the top right side under the About section.
 
 - If you find the Registered Usages option disabled for any specific asset you select, it is because Zero Registered Usages exist.
 
-- When you have an engagement that is bootstrapped successfully from the engagement details page, those engagement ids will get auto captured in Registered Usages under the About section on the asset detail page.
+- When you complete the bootstrap of an Engagement id, the ID details will get auto-captured under the Registered Usages on the About section.
 
-- Any engagement IDs successfully bootstrapped under the engagement details page will be displayed at the bottom under the Register Usage tab of the asset detail page.
+![register usage1.png](/.attachments/register%20usage1-612f4094-991f-4e39-b924-68cd481589fa.png)
 
+- When you successfully bootstrap an Engagement id, you can see the ID details in the comment section under the Register usage tab.
+
+![Register usage 2.png](/.attachments/Register%20usage%202-fdb1b064-a203-44af-ab5e-b7edb456f115.png)
 </br>
 </br>
