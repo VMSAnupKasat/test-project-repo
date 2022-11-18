@@ -1,1 +1,1 @@
-![Asset Types.png](docs/attachments/Asset Type dropdown-ec1fd313-bcef-48ff-93ab-1279837594ff.png)
+![MSFT_Chrysalis_icon.png](/docs/attachments/MSFT_Chrysalis_icon-0b99ddc4-cb60-4d60-beaa-77a703a4e3db.png)
