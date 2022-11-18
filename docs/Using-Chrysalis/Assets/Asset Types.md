@@ -1,1 +1,0 @@
-![Asset Types.png](docs/attachments/Asset Type dropdown-ec1fd313-bcef-48ff-93ab-1279837594ff.png)
