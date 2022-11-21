@@ -35,7 +35,7 @@ You can import Assets from ADO to Chrysalis, which are called "CSE Assets".
 
 - Open the work item (source) query URL, click `+ New Work Item` dropdown, and select Task.
 
-![New task.png](/docs/attachments/New task.png)
+![Newtask.png](/docs/attachments/Newtask.png)
 
 - Enter the Asset title in Title field and Asset description in the Abstract of the task.
 
