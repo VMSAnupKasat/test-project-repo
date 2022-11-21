@@ -1,5 +1,3 @@
-</br>
-</br>
 
 InnerSource flow can be best understood by walking through Personas that are involved.
 
