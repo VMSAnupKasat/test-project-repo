@@ -24,7 +24,7 @@ Iteration paths will enable you to group work into sprints, milestones, or other
 - Sign into your organization (`https://dev.azure.com/{yourorganization}`) where you want to extract the enablers and select the source project.
 
 - Copy the project URL from the address bar and enter the URL to the ADO Project URL field under the IP enablers section in Chrysalis.  
-![image.png](/docs/attachments/image-42cfb8d6-0154-4966-8df3-41ad21d06423.png)
+![Iterations.png](/docs/attachments/Iterations.png)
 
 ## Work Items
 
