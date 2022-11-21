@@ -11,7 +11,7 @@ To learn more about the syntax usage of the OData language, you can refer to the
 
 ## The search result is shown in the below format:
 
-![Deep link row.png](/.attachments/Deep%20link%20row-1b61494b-3e8d-489c-aa25-41ab3399a08e.png)
+![Deeplinkrow.png](/docs/attachments/Deeplinkrow.png)
 
 - You can click the Asset title row from the query result, redirecting you to the Asset detail page.
  
