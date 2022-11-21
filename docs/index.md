@@ -21,7 +21,7 @@
     <tr style="background-color:#037ac4;border:0px">
         <td width="2.5%" style="border:0px" />
         <td width="18%" style="border:0px">
-            <a style="color:#fff" href="https://aka.ms/About-Chrysalis/About-Chrysalis.html">
+            <a style="color:#fff" href="/About-Chrysalis/About-Chrysalis.html">
                 <big>
                     <center>
                         &#10003;
