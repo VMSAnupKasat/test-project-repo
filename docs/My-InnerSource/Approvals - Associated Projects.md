@@ -30,7 +30,7 @@ If you are the Project Owner, you can click the approval link from the email not
 
 -  You can see the Asset and Project title, Requested Date, Requestor name, Status, and Notes.
 
-![add associate box.png](/docs/attachments/add%20associate%20box-52688a46-f9ee-432f-8769-bed59a719a9f.png)
+![addassociatebox.png](/docs/attachments/addassociatebox.png)
 
 - You can **Approve** or **Reject** the request as shown in the above image.
 
