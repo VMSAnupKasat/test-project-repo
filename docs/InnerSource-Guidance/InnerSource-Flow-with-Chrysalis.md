@@ -2,4 +2,4 @@
   </br>
   </br>
   
-  ![Chrysalis Experience](/attachments/InnerSource-Flow-with-Chrysalis.png)  
+  ![Chrysalis Experience](/docs/attachments/InnerSource-Flow-with-Chrysalis.png)  
