@@ -32,7 +32,7 @@ Engagement Bootstrap is used when you have to bootstrap multiple IP Packages or 
 
 2. You can select only Active packages, and when the asset has multiple versions, you can start picking the required Asset version from the dropdown below the package name and click Add.
 
-![package dropdown.png](/.attachments/package%20dropdown-580fed70-be12-4590-b367-c0a4e2090e0a.png)
+![packagedropdown.png](/docs/attachments/packagedropdown.png)
 
 `Note:` You can see the latest Asset version visible on top of the dropdown list.
 
@@ -54,11 +54,11 @@ Engagement Bootstrap is used when you have to bootstrap multiple IP Packages or 
 
 8. Click the **Next** button.
 
-![Select ADO.png](/.attachments/Select%20ADO-6522fd01-c553-452a-bcd8-239d2276376c.png)
+![SelectADO.png](/docs/attachments/SelectADO.png)
 
 9. When your Bootstrap runs into an error, select the required option as described below and click the **Next** button.
 
-![skip ADO.png](/.attachments/skip%20ADO-d53437bf-f25c-46e7-bf8b-c9714d8ce549.png)
+![skipADO.png](/docs/attachments/skipADO.png)
 
 - **Skip the current (IP Package/ IP Component) on error :**
     This is a recommended option. Selecting this will skip the IP package/component for which an error occurs and continue running the next packages/components.
