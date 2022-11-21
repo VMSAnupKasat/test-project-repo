@@ -62,11 +62,11 @@ You can import Assets from ADO to Chrysalis, which are called "CSE Assets".
 
 - Enter the title of the user story (you can use the linked task title) and enter value `"IndustryPriorityScenariosFY22"` in the Business field under the Classification section and click the **Save** button.
 
-![User story industry.png](/docs/attachments/User%20story%20industry-a8077ee0-29f9-48e5-ac89-1005857a4863.png)
+![Userstoryindustry.png](/docs/attachments/Userstoryindustry.png)
 
 - The User Story is the Parent linked to the task.
 
-![US3.png](/docs/attachments/US3-812a2af8-6039-41ea-8f3e-7ca76ca8a754.png)
+![US3.png](/docs/attachments/US3.png)
 
 ### Asset type mapping
 
@@ -100,7 +100,7 @@ You can import Assets from ADO to Chrysalis, which are called "CSE Assets".
 
 - Below is a sample copy of the Asset Import email notification format that you receive:
 
-![email notification.png](/.attachments/email%20notification-512208cc-69b5-48dc-8544-296a0d1897e8.png)
+![emailnotification.png](/docs/attachments/emailnotification.png)
 - There will be two summary reports; where the first summary covers the total number of Assets imported, newly added Asset counts, updated Asset counts, deleted Asset counts, and the failed Asset import counts.
 
 - The second summary covers the assets (work item id) and the error details. You can refer to the error details and take necessary action.
