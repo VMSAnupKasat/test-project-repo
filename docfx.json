@@ -3,14 +3,14 @@
     "content": [
       {
         "src": "docs/",
-        "files": [ "**/*.{md,yml}" ],
+        "files": ["**/*.{md,yml}"],
         "dest": "."
       }
     ],
     "resource": [
       {
         "src": "docs/",
-        "files": [ "**/*.{jpg,jpeg,png,bmp,gif,svg}" ],
+        "files": ["**/*.{jpg,jpeg,png,bmp,gif,svg}"],
         "dest": "."
       }
     ],
