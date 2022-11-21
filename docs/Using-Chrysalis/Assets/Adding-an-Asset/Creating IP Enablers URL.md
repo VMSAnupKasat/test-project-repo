@@ -24,7 +24,7 @@ Iteration paths will enable you to group work into sprints, milestones, or other
 - Sign into your organization (`https://dev.azure.com/{yourorganization}`) where you want to extract the enablers and select the source project.
 
 - Copy the project URL from the address bar and enter the URL to the ADO Project URL field under the IP enablers section in Chrysalis.  
-![image.png](/.attachments/image-42cfb8d6-0154-4966-8df3-41ad21d06423.png)
+![image.png](/docs/attachments/image-42cfb8d6-0154-4966-8df3-41ad21d06423.png)
 
 ## Work Items
 
@@ -42,13 +42,13 @@ Adding work items enabler will enable you to track the features and requirements
 
 - Edit the new query folder type to a tree of work items or a flat list of work items from the Editor tab.
 
-![type of query.png](/.attachments/type%20of%20query-d81019c6-e38c-4805-b889-e1d7f239d7ff.png)
+![typeofquery.png](/docs/attachments/typeofquery.png)
 
 - If you have an existing query folder, select it, you have the work items listed under the Results tab. The URL on the address bar from the Results tab page is called the work item query URL.
 
 - Copy the URL from ADO and update it to the work item query URL field under the IP enablers section in Chrysalis.
 
-![Work item enabler.png](/.attachments/Work%20item%20enabler-7620c92c-f179-4e49-bb8b-14b3f6c29bfa.png)
+![Workitemenabler.png](/docs/attachments/Workitemenabler.png)
 
 
  ## Repository
@@ -61,7 +61,7 @@ Azure Repos uses **_[Version control](https://learn.microsoft.com/en-us/devops/d
 
 - Select **Repos** from the menu and choose your repo from the top repo path dropdown.
 
-![Repo enabler2.png](/.attachments/Repo%20enabler2-0f916128-1665-4cff-902c-a4d19767ddcb.png)
+![Repoenabler2.png](/docs/attachments/Repoenabler2.png)
 
 - Click the Clone button on top right side of the repo page.
 
@@ -71,7 +71,7 @@ Azure Repos uses **_[Version control](https://learn.microsoft.com/en-us/devops/d
 
 - Enter the copied URL to the Repository URL field under the IP enablers section in Chrysalis.
 
-![Repo enabler.png](/.attachments/Repo%20enabler-6f462634-794c-4e79-8127-ed89a22a63a3.png)
+![Repoenabler.png](/docs/attachments/Repoenabler.png)
 
 ## Pipelines
 
@@ -87,7 +87,7 @@ Adding Azure Pipelines as an enabler will allow automatic build and test code pr
 
 - Copy the pipeline URL from the address bar and enter the URL to the pipeline URL field under the IP enablers section in Chrysalis. 
 
-![Pipeline enabler.png](/.attachments/Pipeline%20enabler-4e0a0ad7-fd2e-4749-8758-842df4301e36.png)
+![Pipelineenabler.png](/docs/attachments/Pipelineenabler.png)
 
 ## Docs as Code 
 
