@@ -39,7 +39,7 @@ You can import Assets from ADO to Chrysalis, which are called "CSE Assets".
 
 - Enter the Asset title in Title field and Asset description in the Abstract of the task.
 
-![task1.png](/.attachments/task1-8491d7dd-4997-4aaf-8a1a-cc2b8800c3ad.png)
+![task1.png](/docs/attachments/task1.png)
 
 - Reference the fields that you must fill in. You can select the Asset type based on the **_[Asset type mapping](#Asset-type-mapping)_**.
 
