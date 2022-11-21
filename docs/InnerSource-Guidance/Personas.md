@@ -9,7 +9,7 @@ InnerSource flow can be best understood by walking through Personas that are inv
 * Owner
 * Chrysalis Admin
 
-![Personas](/attachments/Personas.png)
+![Personas](/docs/attachments/Personas.png)
 
 ## Consumer
 
