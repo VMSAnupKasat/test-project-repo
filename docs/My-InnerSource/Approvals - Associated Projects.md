@@ -40,7 +40,7 @@ If you are the Project Owner, you can click the approval link from the email not
 
 - When you click on the status field with approved or rejected, you can see the decision label updated (approved/rejected) under Notes at the bottom of the page.
 
-![project notes.png](/.attachments/project%20notes-ed67bb3e-8532-4e4d-9c55-83bcb3dc321b.png)
+![projectnotes.png](/docs/attachments/projectnotes.png)
 
 - If the request is approved, Asset Owner will receive an email notification of the approval. They can view the project linked or tagged to their asset in the contributing project field on the Asset detail page. 
 
