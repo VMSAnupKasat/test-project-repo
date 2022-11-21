@@ -53,4 +53,4 @@ You cannot delete an asset when it is bootstrapped, any component is associated 
 
 - When you try to change the status of a Private asset to Enterprise, then you will see the following confirmation message.
 
-![private.png](/docs/attachments/private-101dfe80-f4de-441c-a15d-554cccbbd7ed.png)
+![private.png](/docs/attachments/private.png)
