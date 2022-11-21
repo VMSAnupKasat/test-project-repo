@@ -9,43 +9,43 @@ This section gives a complete overview of Chrysalis platform usage. The usage co
 [[_TOC_]]
 **[Ideas](/Using-Chrysalis/Ideas)**
 
-- [Explore Ideas](/Using-Chrysalis/Ideas/Explore-Ideas)
+- [Explore Ideas](/docs/Using-Chrysalis/ideas/Explore-Ideas.md)
 
-- [Post Idea](/Using-Chrysalis/Ideas/Post-Idea)
+- [Post Idea](/docs/Using-Chrysalis/ideas/Post-Idea.md)
 
-- [Creating Project from an Idea](/Using-Chrysalis/Ideas/Creating-Project-from-an-Idea)
+- [Creating Project from an Idea](/docs/Using-Chrysalis/ideas/Creating-Project-from-an-Idea.md)
 
-- [Associate Ideas to a Project](/Using-Chrysalis/Projects/Associate-Assets-to-a-Project)
+- [Associate Ideas to a Project](docs/Using-Chrysalis/ideas/Associate-Ideas-to-a-Project.md)
 
 
-- [Vote an Idea](/Using-Chrysalis/Ideas/Vote-an-Idea)
+- [Vote an Idea](/docs/Using-Chrysalis/ideas/Vote-an-Idea.md)
 
 **[Projects](/Using-Chrysalis/Projects)**
 
-- [Explore Projects](/Using-Chrysalis/Projects/Explore-Projects)
+- [Explore Projects](/docs/Using-Chrysalis/Projects/Explore-Projects.md)
 
-- [Creating a Project](/Using-Chrysalis/Projects/Creating-a-Project)
+- [Creating a Project](/docs/Using-Chrysalis/Projects/Creating-a-Project.md)
 
-- [Selecting Project Type](/Using-Chrysalis/Projects/Selecting-Project-Type)
+- [Selecting Project Type](/docs/Using-Chrysalis/Projects/Selecting-Project-Type.md)
 
-- [Editing a Project](/Using-Chrysalis/Projects/Editing-a-Project)
+- [Editing a Project](/docs/Using-Chrysalis/Projects/Editing-a-Project.md)
 
-- [Associate Assets to a Project](/Using-Chrysalis/Projects/Associate-Assets-to-a-Project)
+- [Associate Assets to a Project](/docs/Using-Chrysalis/Projects/Associate-Assets-to-a-Project.md)
 
-- [Requesting for Volunteer](/Using-Chrysalis/Projects/Requesting-for-Volunteer)
+- [Requesting for Volunteer](/docs/Using-Chrysalis/Projects/Requesting-for-Volunteer.md)
 
-- [Join a Project to contribute](/Using-Chrysalis/Projects/Join-a-Project)
+- [Join a Project to contribute](/docs/Using-Chrysalis/Projects/Join-a-Project.md)
 
 
 **[Assets](/Using-Chrysalis/Assets)**
 
-- [Explore Assets](/Using-Chrysalis/Assets/Explore-Assets)
+- [Explore Assets](/docs/Using-Chrysalis/Assets/Explore-Assets.md)
 
-- [Asset Types](/Using-Chrysalis/Assets/Asset-Types)
+- [Asset Types](/docs/Using-Chrysalis/Assets/Asset_Types.md)
 
-- [Adding an Asset](/Using-Chrysalis/Assets/Adding-an-Asset)
+- [Adding an Asset](/docs/Using-Chrysalis/Assets/Adding-an-Asset.md)
 
-- [Edit and Delete an Asset](/Using-Chrysalis/Assets/Edit-and-Delete-an-Asset)
+- [Edit and Delete an Asset](/docs/Using-Chrysalis/Assets/Edit and Delete an Asset.md)
 
 - [Register Asset Usage](/Using-Chrysalis/Assets/Register-Asset-Usage)
 
