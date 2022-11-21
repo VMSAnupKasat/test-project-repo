@@ -7,8 +7,8 @@
 <table width="100%">
     <tr style="background-color:#05529c">
         <td style="border:0px"></td>
-        <td style="display:block;border:0px;padding-top: 22px;" width="50%">
-  ![MSFT_Chrysalis_icon.png](attachments/MSFT_Chrysalis_icon-0b99ddc4-cb60-4d60-beaa-77a703a4e3db.png)        
+        <td style="border:0px">
+            ![MSFT_Chrysalis_icon.png](/docs/attachments/MSFT_Chrysalis_icon-0b99ddc4-cb60-4d60-beaa-77a703a4e3db.png)
         </td>
         <td width="100%" style="color:#fff;border:0px" colspan="3">
             <h1 style="color:#fff;">
@@ -32,7 +32,7 @@
                 </center>
         </td>
         <td width="19%" style="border:0px">
-            <a style="color:#fff" href="InnerSource-Guidance/index.html">
+            <a style="color:#fff" href="InnerSource-Guidance/Index.html">
                 <big>
                     <center>
                         &#9783;
@@ -66,7 +66,7 @@
                 </center>
         </td>
         <td width="19%" style="border:0px">
-            <a style="color:#fff" href="Roadmap.html">
+            <a style="color:#fff" href="/Roadmap.html">
                 <big>
                     <center>
                         &#9736;
@@ -85,7 +85,7 @@
                 and realize greater value</p>
             <table width="100%">
                 <tr>
-                    <td width="80%" style="background-color:#05529c;color:#fff">
+                    <td width="50%" style="background-color:#05529c;color:#fff">
                         <a style="text-decoration:none;color:#fff" href="https://aka.ms/Using-Chrysalis?fullScreen=true">
                             <center>
                                 Learn how to use Chrysalis
@@ -105,7 +105,7 @@
             <p>Learn the basics of InnerSource and how to make it real in your project scenario.</p>
             <table width="100%">
                 <tr>
-                    <td width="80%" style="background-color:#05529c;color:#fff">
+                    <td width="50%" style="background-color:#05529c;color:#fff">
                         <a style="text-decoration:none;color:#fff"
                             href="https://aka.ms/InnerSource-Guidance?fullScreen=true">
                             <center>
@@ -124,7 +124,7 @@
 <table width="100%">
     <tbody width="100%" style="display:table;">
         <tr>
-            <td colspan="7" width="100%" style="border:0px">
+            <td colspan="10" width="100%" style="border:0px">
                 <big>
                     <center> Explore Topics </center>
                 </big>
@@ -154,14 +154,14 @@
         <tr>
             <td width="15.5%" style="border:0px">
                 <center>
-                    <small><a href="https://tinyurl.com/mvk7bm9k?fullScreen=true" />Learn more about Ideas
+                    <small><a href="https://aka.ms/Chrysalis-Ideas?fullScreen=true"/>Learn more about Ideas
                     </small>
                 </center>
             </td>
             <td width="3.3%" style="border:0px" />
             <td width="15.5%" style="border:0px">
                 <center>
-                    <small><a href="https://tinyurl.com/2p8wfh87?fullScreen=true" />Learn more about projects
+                    <small><a href="https://aka.ms/Chrysalis-Projects?fullScreen=true"/>Learn more about projects
                     </small>
                 </center>
             </td>
@@ -179,6 +179,7 @@
                     </small>
                 </center>
             </td>
+		<td width="3.3%" style="border:0px"/>
             <td width="15.5%" style="border:0px">
                 <center>
                     <small><a href="https://aka.ms/Chrysalis-My-InnerSource?fullScreen=true">Learn more about
@@ -190,19 +191,19 @@
         <tr>
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Post-Idea" />How to Post your Idea
+                    <small><a href="https://aka.ms/Post-Idea"/>How to Post your Idea
                     </small>
                 </center>
                 <td width="3.3%" style="border:0px" />
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Creating-Project-from-an-Idea" />How to Create your Project
+                    <small><a href="https://aka.ms/Creating-Project-from-an-Idea"/>How to Create your Project
                     </small>
                 </center>
                 <td width="3.3%" style="border:0px" />
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Adding-an-Asset?fullScreen=true" />How to Add an Asset
+                    <small><a href="https://aka.ms/Adding-an-Asset?fullScreen=true"/>How to Add an Asset
                     </small>
                 </center>
             </td>
@@ -210,19 +211,19 @@
         <tr>
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Vote-an-idea?fullScreen=true" />How to Vote for Ideas
+                    <small><a href="https://aka.ms/Vote-an-idea?fullScreen=true"/>How to Vote for Ideas
                     </small>
                 </center>
                 <td width="3.3%" style="border:0px" />
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Join-a-Project?fullScreen=true" />How to Join a Project
+                    <small><a href="https://aka.ms/Join-a-Project?fullScreen=true"/>How to Join a Project
                     </small>
                 </center>
             <td width="3.3%" style="border:0px">
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Register-Asset-Usage?fullScreen=true" />How to Register Asset Usage
+                    <small><a href="https://aka.ms/Register-Asset-Usage?fullScreen=true"/>How to Register Asset Usage
                     </small>
                 </center>
         </tr>
@@ -235,16 +236,12 @@
             <p>Get excited about Chrysalis and InnerSource culture. Learn about the wealth of potential in the little
                 ideas, just waiting to be seen.</p>
         </td>
-        <td>        
-            <iframe width="540" height="260"
+        <td>
+            ::: video
+            <iframe width="640" height="360"
                 src="https://msit.microsoftstream.com/embed/video/4db40840-98dc-b561-93ea-f1ebf690bd02?autoplay=false&showinfo=true"
                 allowfullscreen style="border:none;"></iframe>
-                    </br>
-    </br>
-    </br>
-            
+            :::
         </td>
     </tr>
-    </br>
-    </br>
 </table>
