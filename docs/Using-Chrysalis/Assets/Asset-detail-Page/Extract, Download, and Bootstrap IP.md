@@ -70,13 +70,13 @@ Bootstrap delivers the functionality to bootstrap/deploy enablers (work items, r
 
 2. Select the **Bootstrap** button and click **Next**.
 
-![testboot3.png](/.attachments/testboot3-9f571c3d-cdbd-4ec3-b2ac-3221ac1ebb76.png)
+![testboot3.png](/docs/attachments/testboot3.png)
 
 `Note:` You must check-in the check box to enable the Next button.
 
 2. Enter the Bootstrap **URL** and **PAT** in Target Environment Details.
 
-![url1.png](/.attachments/url1-97b95283-70d6-406d-8346-dafe45b5067b.png)
+![url1.png](/docs/attachments/url1.png)
 
 `Note:`
 - **Target DevOps URL** (Azure DevOps URL: https://dev.azure.com/{organization}/{project}, Azure DevOps legacy URL: https://{organization}.visualstudio.com/{project} )
@@ -102,7 +102,7 @@ This is recommended option. This option will skip the IP Package/ IP Component f
 - **Continue on Error**: This option will continue running the package/components even if any error occurs.
 - **Skip everything else**: This option will skip everything and stop bootstrap when first error occurs.
 
-![skip ADO2.png](/.attachments/skip%20ADO2-495d8a71-238b-421e-b1dc-7628a2265b5d.png)
+![skipADO2.png](/docs/attachments/skipADO2.png)
 
 7. Click the **Next** button to proceed with bootstrap.
 8. You can see live logs/commentary from view running bootstrap.
