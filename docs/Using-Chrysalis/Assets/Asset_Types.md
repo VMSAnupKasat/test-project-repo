@@ -1,1 +1,1 @@
-![Asset Types.png](docs/attachments/Assettypes.png)
+![Assettypes.png](docs/attachments/Assettypes.png)
