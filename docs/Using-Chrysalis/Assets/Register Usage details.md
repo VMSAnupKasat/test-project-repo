@@ -17,10 +17,10 @@ You can view the Projects and Engagement id details under the Register Usage.
 
 - When you complete the bootstrap of an Engagement id, the ID details will get auto-captured under the Registered Usages on the About section.
 
-![register usage1.png](/.attachments/register%20usage1-612f4094-991f-4e39-b924-68cd481589fa.png)
+![registerusage1.png](/docs/attachments/registerusage1.png)
 
 - When you successfully bootstrap an Engagement id, you can see the ID details in the comment section under the Register usage tab.
 
-![Register usage 2.png](/.attachments/Register%20usage%202-fdb1b064-a203-44af-ab5e-b7edb456f115.png)
+![Registerusage2.png](/docs/attachments/Registerusage2.png)
 </br>
 </br>
