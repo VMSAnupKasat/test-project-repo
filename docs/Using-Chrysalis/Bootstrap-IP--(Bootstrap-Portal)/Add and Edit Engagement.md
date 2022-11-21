@@ -19,7 +19,7 @@ When you click the Add Engagement button, you create a new engagement in the chr
 | Associated System | Select the associated system type from the dropdown. |
 | Associated System ID | Select the associated system id from the dropdown. |
 
-![Add engagement.png](/.attachments/Add%20engagement-63d66479-8125-42de-954b-b0fb4732dc3d.png)
+![Addengagement.png](/docs/attachments/Addengagement.png)
 
 5. Click the **Save** button.
 
