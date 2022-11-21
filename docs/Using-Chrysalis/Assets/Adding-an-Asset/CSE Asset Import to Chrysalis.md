@@ -43,7 +43,7 @@ You can import Assets from ADO to Chrysalis, which are called "CSE Assets".
 
 - Reference the fields that you must fill in. You can select the Asset type based on the **_[Asset type mapping](#Asset-type-mapping)_**.
 
-![task2.png](/.attachments/task2-cf232570-03ba-4ea2-b52d-ed3e4150d054.png)
+![task2.png](/docs/attachments/task2.png)
 
 `Note:` You can use the semicolon `(;)` symbol to add more than one value in the Product field.
 
@@ -51,22 +51,22 @@ You can import Assets from ADO to Chrysalis, which are called "CSE Assets".
 
 - Click `+ New Work Item` dropdown from Work Items and select User Story.
 
-![US1.png](/.attachments/US1-8dcd1926-640d-4f5e-8b05-e121ba6b1fb2.png)
+![US1.png](/docs/attachments/US1.png)
 
 - Enter the title of the User Story and select the link icon 
 
-![US2.png](/.attachments/US2-9c0b6194-a31c-492b-91d6-a86ca8d587ab.png)
+![US2.png](/docs/attachments/US2.png)
 
 - You can either select new item or an existing item from the `+ Add link` dropdown.
 - If you want to link an existing task to the user story, pick the link type as 'Child,' select the corresponding task, and click the **OK** button. 
 
 - Enter the title of the user story (you can use the linked task title) and enter value `"IndustryPriorityScenariosFY22"` in the Business field under the Classification section and click the **Save** button.
 
-![User story industry.png](/.attachments/User%20story%20industry-a8077ee0-29f9-48e5-ac89-1005857a4863.png)
+![User story industry.png](/docs/attachments/User%20story%20industry-a8077ee0-29f9-48e5-ac89-1005857a4863.png)
 
 - The User Story is the Parent linked to the task.
 
-![US3.png](/.attachments/US3-812a2af8-6039-41ea-8f3e-7ca76ca8a754.png)
+![US3.png](/docs/attachments/US3-812a2af8-6039-41ea-8f3e-7ca76ca8a754.png)
 
 ### Asset type mapping
 
