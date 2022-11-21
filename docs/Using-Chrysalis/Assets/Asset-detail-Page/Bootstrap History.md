@@ -15,7 +15,7 @@ Following are the steps to be followed to Bootstrap an asset:
 
 3. Select the (asset title) from the search list and click the Bootstrap History tab.
 
-![Standalone Boot.png](/.attachments/Standalone%20Boot-f99f9f7e-ed51-487c-a2f8-a1caf67d9f94.png)
+![StandaloneBoot.png](/docs/attachments/StandaloneBoot.png)
 
 _Column Description_ 
 
