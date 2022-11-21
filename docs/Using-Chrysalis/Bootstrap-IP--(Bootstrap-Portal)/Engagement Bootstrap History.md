@@ -13,7 +13,7 @@ The Bootstrap History tab from the Engagement Details page will show you the num
 
 4. When you click the Download logs button on the right pane, a file gets downloaded to your local drive, where you can refer to the log details with the specific package name or component listed.
 
-![accordion.png](/docs/attachments/accordion.png)
+![accordion.png](/docs/attachments/accordion-6b75c483-46c1-433d-b40f-f0c8442dd4ba.png)
 
 `Note:`
 
