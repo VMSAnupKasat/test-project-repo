@@ -49,9 +49,9 @@ This section gives a complete overview of Chrysalis platform usage. The usage co
 
 - [Register Asset Usage](/docs/Using-Chrysalis/Assets/Register-Asset-Usage.md)
 
-- [Register Usage details](/docs/Using-Chrysalis/Assets/Register Usage details.md)
+- [Register Usage details](/docs/Using-Chrysalis/Assets/Register-Usage-details.md)
 
-- [Trending Assets and Role-based permission on Assets](/docs/Using-Chrysalis/Assets/Trending Assets and Role-based permission on Assets.md)
+- [Trending Assets and Role-based permission on Assets](/docs/Using-Chrysalis/Assets/Trending-Assets-and-Role-based-permission-on-Assets.md)
 
 **[Insights](/Using-Chrysalis/Insights)**
 
