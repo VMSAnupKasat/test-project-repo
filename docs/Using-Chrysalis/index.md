@@ -6,7 +6,7 @@
  
 This section gives a complete overview of Chrysalis platform usage. The usage content is broken down in to key pillars and the respective components available in each of the pillars which user's can leverage to make successful usage of chrysalis platform.
 
-**[Ideas](/Using-Chrysalis/Ideas)**
+**[Ideas](/docs/Using-Chrysalis/ideas)**
 
 - [Explore Ideas](/docs/Using-Chrysalis/ideas/Explore-Ideas.md)
 
