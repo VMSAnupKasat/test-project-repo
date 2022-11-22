@@ -55,7 +55,7 @@ This section gives a complete overview of Chrysalis platform usage. The usage co
 
 **[Insights](/Using-Chrysalis/Insights)**
 
-- [Deep link query search using OData language](/docs/Using-Chrysalis/Insights/Deep link query search using OData languague.md)
+- [Deep link query search using OData language](/docs/Using-Chrysalis/Insights/Deep-link-query-search-using-OData-languague.md)
 - [Reports](/docs/Using-Chrysalis/Insights/Reports.md) 
 
 
