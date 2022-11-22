@@ -19,7 +19,7 @@ This section gives a complete overview of Chrysalis platform usage. The usage co
 
 - [Vote an Idea](/docs/Using-Chrysalis/ideas/Vote-an-Idea.md)
 
-**[Projects](/Using-Chrysalis/Projects)**
+**[Projects](/docs/Using-Chrysalis/Projects)**
 
 - [Explore Projects](/docs/Using-Chrysalis/Projects/Explore-Projects.md)
 
@@ -36,7 +36,7 @@ This section gives a complete overview of Chrysalis platform usage. The usage co
 - [Join a Project to contribute](/docs/Using-Chrysalis/Projects/Join-a-Project.md)
 
 
-**[Assets](/Using-Chrysalis/Assets)**
+**[Assets](/docs/Using-Chrysalis/Assets)**
 
 - [Explore Assets](/docs/Using-Chrysalis/Assets/Explore-Assets.md)
 
@@ -52,7 +52,7 @@ This section gives a complete overview of Chrysalis platform usage. The usage co
 
 - [Trending Assets and Role-based permission on Assets](/docs/Using-Chrysalis/Assets/Trending-Assets-and-Role-based-permission-on-Assets.md)
 
-**[Insights](/Using-Chrysalis/Insights)**
+**[Insights](/docs/Using-Chrysalis/Insights)**
 
 - [Deep link query search using OData language](/docs/Using-Chrysalis/Insights/Deep-link-query-search-using-OData-languague.md)
 - [Reports](/docs/Using-Chrysalis/Insights/Reports.md) 
