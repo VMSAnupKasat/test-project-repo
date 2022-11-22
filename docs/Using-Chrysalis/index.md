@@ -47,16 +47,16 @@ This section gives a complete overview of Chrysalis platform usage. The usage co
 
 - [Edit and Delete an Asset](/docs/Using-Chrysalis/Assets/Edit and Delete an Asset.md)
 
-- [Register Asset Usage](/Using-Chrysalis/Assets/Register-Asset-Usage)
+- [Register Asset Usage](/docs/Using-Chrysalis/Assets/Register-Asset-Usage.md)
 
-- [Register Usage details](/Using-Chrysalis/Assets/Register-Usage-details)
+- [Register Usage details](/docs/Using-Chrysalis/Assets/Register Usage details.md)
 
-- [Trending Assets and Role-based permission on Assets](/Using-Chrysalis/Assets/Trending-Assets-and-Role%2Dbased-permission-on-Assets)
+- [Trending Assets and Role-based permission on Assets](/docs/Using-Chrysalis/Assets/Trending Assets and Role-based permission on Assets.md)
 
 **[Insights](/Using-Chrysalis/Insights)**
 
-- [Deep link query search using OData language](/Using-Chrysalis/Insights/Deep-link-query-search-using-OData-languague)
-- [Reports](/Using-Chrysalis/Insights/Reports) 
+- [Deep link query search using OData language](/docs/Using-Chrysalis/Insights/Deep link query search using OData languague.md)
+- [Reports](/docs/Using-Chrysalis/Insights/Reports.md) 
 
 
 
