@@ -86,7 +86,7 @@
             <table width="100%">
                 <tr>
                     <td width="50%" style="background-color:#05529c;color:#fff">
-                        <a style="text-decoration:none;color:#fff" href="https://aka.ms/Using-Chrysalis?fullScreen=true">
+                        <a style="text-decoration:none;color:#fff" href="https://aka.ms/Docs-Using-Chrysalis">
                             <center>
                                 Learn how to use Chrysalis
                             </center>
@@ -107,7 +107,7 @@
                 <tr>
                     <td width="50%" style="background-color:#05529c;color:#fff">
                         <a style="text-decoration:none;color:#fff"
-                            href="https://aka.ms/InnerSource-Guidance?fullScreen=true">
+                            href="https://aka.ms/Docs-InnerSource-Guidance">
                             <center>
                                 InnerSource Guidance
                             </center>
@@ -175,14 +175,14 @@
             <td width="3.3%" style="border:0px" />
             <td width="15.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Chrysalis-Insights?fullScreen=true">Learn more about Insights
+                    <small><a href="https://aka.ms/Docs-Insights">Learn more about Insights
                     </small>
                 </center>
             </td>
 		<td width="3.3%" style="border:0px"/>
             <td width="15.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Chrysalis-My-InnerSource?fullScreen=true">Learn more about
+                    <small><a href="https://aka.ms/Docs-My-InnerSource">Learn more about
                             MyInnerSource
                     </small>
                 </center>
@@ -191,13 +191,13 @@
         <tr>
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Post-Idea"/>How to Post your Idea
+                    <small><a href="https://aka.ms/Docs-Post-Idea"/>How to Post your Idea
                     </small>
                 </center>
                 <td width="3.3%" style="border:0px" />
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Creating-Project-from-an-Idea"/>How to Create your Project
+                    <small><a href="https://aka.ms/Docs-Creating-Project-from-an-Idea"/>How to Create your Project
                     </small>
                 </center>
                 <td width="3.3%" style="border:0px" />
