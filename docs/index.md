@@ -1,4 +1,4 @@
-# Evergreen Delivery IP - testing for IP
+# Evergreen Delivery IP - Improved this Doc
 
 ![Evergreen Delivery IP Logo](media/evergreen-delivery-ip-logo-small.png)
 
