@@ -8,7 +8,7 @@
     <tr style="background-color:#05529c">
         <td style="border:0px"></td>
         <td style="border:0px">
-        ![Chrysalis](/docs/attachments/MSFT_Chrysalis_icon-0b99ddc4-cb60-4d60-beaa-77a703a4e3db.png)
+        ![Chrysalis](/docs/attachments/Chrysalis-log.png)
         </td>
         <td width="100%" style="color:#fff;border:0px" colspan="3">
             <h1 style="color:#fff;">
