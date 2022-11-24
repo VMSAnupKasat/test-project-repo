@@ -8,7 +8,7 @@
     <tr style="background-color:#05529c">
         <td style="border:0px"></td>
         <td style="border:0px">
-        ![Chrysalis-log](/docs/attachments/Chrysalis-log.png)
+        ![Chrysalis-log](/docs/attachments/Chrysalis-log.png =50X50)
         </td>
         <td width="100%" style="color:#fff;border:0px" colspan="3">
             <h1 style="color:#fff;">
