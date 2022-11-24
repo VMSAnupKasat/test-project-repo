@@ -32,7 +32,7 @@
                 </center>
         </td>
         <td width="19%" style="border:0px">
-            <a style="color:#fff" href="https://dev.azure.com/servicescode-test/TCS-Test-Project/_git/DocsAsCode?path=/docs/InnerSource-Guidance/index.html">
+            <a style="color:#fff" href="/InnerSource-Guidance/InnerSource-Guidance.html">
                 <big>
                     <center>
                         &#9783;
@@ -66,7 +66,7 @@
                 </center>
         </td>
         <td width="19%" style="border:0px">
-            <a style="color:#fff" href="https://dev.azure.com/servicescode-test/TCS-Test-Project/_git/DocsAsCode?path=/docs/Roadmap.html">
+            <a style="color:#fff" href="/Roadmap/Roadmap.html">
                 <big>
                     <center>
                         &#9736;
