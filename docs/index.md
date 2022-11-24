@@ -161,14 +161,14 @@
             <td width="3.3%" style="border:0px" />
             <td width="15.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Chrysalis-Projects?fullScreen=true"/>Learn more about projects
+                    <small><a href="https://aka.ms/Docs-Projects"/>Learn more about projects
                     </small>
                 </center>
             </td>
             <td width="3.3%" style="border:0px" />
             <td width="15.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Chrysalis-Assets?fullScreen=true">Learn more about Assets
+                    <small><a href="https://aka.ms/Docs-Assets">Learn more about Assets
                     </small>
                 </center>
             </td>
