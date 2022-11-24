@@ -21,7 +21,7 @@
     <tr style="background-color:#037ac4;border:0px">
         <td width="2.5%" style="border:0px" />
         <td width="18%" style="border:0px">
-            <a style="color:#fff" href="https://dev.azure.com/servicescode-test/TCS-Test-Project/_git/DocsAsCode?path=/docs/About-Chrysalis/About-Chrysalis.html">
+            <a style="color:#fff" href="/About-Chrysalis/About-Chrysalis.html">
                 <big>
                     <center>
                         &#10003;
