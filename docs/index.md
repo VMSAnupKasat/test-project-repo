@@ -203,7 +203,7 @@
                 <td width="3.3%" style="border:0px" />
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Adding-an-Asset?fullScreen=true"/>How to Add an Asset
+                    <small><a href="https://aka.ms/Docs-Adding-an-Asset"/>How to Add an Asset
                     </small>
                 </center>
             </td>
@@ -211,19 +211,19 @@
         <tr>
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Vote-an-idea?fullScreen=true"/>How to Vote for Ideas
+                    <small><a href="https://aka.ms/Docs-Vote-an-Idea"/>How to Vote for Ideas
                     </small>
                 </center>
                 <td width="3.3%" style="border:0px" />
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Join-a-Project?fullScreen=true"/>How to Join a Project
+                    <small><a href="https://aka.ms/Docs-Join-a-Project"/>How to Join a Project
                     </small>
                 </center>
             <td width="3.3%" style="border:0px">
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Register-Asset-Usage?fullScreen=true"/>How to Register Asset Usage
+                    <small><a href="https://aka.ms/Docs-Register-Asset-Usage"/>How to Register Asset Usage
                     </small>
                 </center>
         </tr>
