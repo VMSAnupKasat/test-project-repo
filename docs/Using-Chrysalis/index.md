@@ -6,55 +6,55 @@
  
 This section gives a complete overview of Chrysalis platform usage. The usage content is broken down in to key pillars and the respective components available in each of the pillars which user's can leverage to make successful usage of chrysalis platform.
 
-**[Ideas](Using-Chrysalis/ideas)**
+**[Ideas](ideas/index.html)**
 
-- [Explore Ideas](Using-Chrysalis/ideas/Explore-Ideas.html)
+- [Explore Ideas](ideas/Explore-Ideas.html)
 
-- [Post Idea](Using-Chrysalis/ideas/Post-Idea.html)
+- [Post Idea](ideas/Post-Idea.html)
 
-- [Creating Project from an Idea](Using-Chrysalis/ideas/Creating-Project-from-an-Idea.html)
+- [Creating Project from an Idea](ideas/Creating-Project-from-an-Idea.html)
 
-- [Associate Ideas to a Project](docs/Using-Chrysalis/ideas/Associate-Ideas-to-a-Project.html)
+- [Associate Ideas to a Project](docs/ideas/Associate-Ideas-to-a-Project.html)
 
-- [Vote an Idea](Using-Chrysalis/ideas/Vote-an-Idea.html)
+- [Vote an Idea](ideas/Vote-an-Idea.html)
 
-**[Projects](Using-Chrysalis/Projects)**
+**[Projects](Projects/index.html)**
 
-- [Explore Projects](Using-Chrysalis/Projects/Explore-Projects.html)
+- [Explore Projects](Projects/Explore-Projects.html)
 
-- [Creating a Project](Using-Chrysalis/Projects/Creating-a-Project.html)
+- [Creating a Project](Projects/Creating-a-Project.html)
 
-- [Selecting Project Type](Using-Chrysalis/Projects/Selecting-Project-Type.html)
+- [Selecting Project Type](Projects/Selecting-Project-Type.html)
 
-- [Editing a Project](Using-Chrysalis/Projects/Editing-a-Project.html)
+- [Editing a Project](Projects/Editing-a-Project.html)
 
-- [Associate Assets to a Project](Using-Chrysalis/Projects/Associate-Assets-to-a-Project.html)
+- [Associate Assets to a Project](Projects/Associate-Assets-to-a-Project.html)
 
-- [Requesting for Volunteer](Using-Chrysalis/Projects/Requesting-for-Volunteer.html)
+- [Requesting for Volunteer](Projects/Requesting-for-Volunteer.html)
 
-- [Join a Project to contribute](Using-Chrysalis/Projects/Join-a-Project.html)
+- [Join a Project to contribute](Projects/Join-a-Project.html)
 
 
-**[Assets](Using-Chrysalis/Assets)**
+**[Assets](Assets/index.html)**
 
-- [Explore Assets](Using-Chrysalis/Assets/Explore-Assets.html)
+- [Explore Assets](Assets/Explore-Assets.html)
 
-- [Asset Types](Using-Chrysalis/Assets/Asset_Types.html)
+- [Asset Types](Assets/Asset_Types.html)
 
-- [Adding an Asset](Using-Chrysalis/Assets/Adding-an-Asset.html)
+- [Adding an Asset](Assets/Adding-an-Asset.html)
 
-- [Edit and Delete an Asset](Using-Chrysalis/Assets/Edit-and-Delete-an-Asset.html)
+- [Edit and Delete an Asset](Assets/Edit-and-Delete-an-Asset.html)
 
-- [Register Asset Usage](Using-Chrysalis/Assets/Register-Asset-Usage.html)
+- [Register Asset Usage](Assets/Register-Asset-Usage.html)
 
-- [Register Usage details](Using-Chrysalis/Assets/Register-Usage-details.html)
+- [Register Usage details](Assets/Register-Usage-details.html)
 
-- [Trending Assets and Role-based permission on Assets](Using-Chrysalis/Assets/Trending-Assets-and-Role-based-permission-on-Assets.html)
+- [Trending Assets and Role-based permission on Assets](Assets/Trending-Assets-and-Role-based-permission-on-Assets.html)
 
-**[Insights](Using-Chrysalis/Insights)**
+**[Insights](Insights/index.html)**
 
-- [Deep link query search using OData language](Using-Chrysalis/Insights/Deep-link-query-search-using-OData-languague.html)
-- [Reports](Using-Chrysalis/Insights/Reports.html) 
+- [Deep link query search using OData language](Insights/Deep-link-query-search-using-OData-languague.html)
+- [Reports](Insights/Reports.html) 
 
 
 
