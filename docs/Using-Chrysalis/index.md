@@ -38,13 +38,13 @@ This section gives a complete overview of Chrysalis platform usage. The usage co
 
 **[Assets](/docs/Using-Chrysalis/Assets)**
 
-- [Explore Assets](/docs/Using-Chrysalis/Assets/Explore-Assets.md)
+- [Explore Assets](Using-Chrysalis/Assets/Explore-Assets.html)
 
 - [Asset Types](/docs/Using-Chrysalis/Assets/Asset_Types.md)
 
 - [Adding an Asset](/docs/Using-Chrysalis/Assets/Adding-an-Asset.md)
 
-- [Edit and Delete an Asset](/docs/Using-Chrysalis/Assets/Edit-and-Delete-an-Asset.md)
+- [Edit and Delete an Asset](Using-Chrysalis/Assets/Edit-and-Delete-an-Asset.html)
 
 - [Register Asset Usage](/docs/Using-Chrysalis/Assets/Register-Asset-Usage.md)
 
