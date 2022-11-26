@@ -32,7 +32,7 @@
                 </center>
         </td>
         <td width="19%" style="border:0px">
-            <a style="color:#fff" href="InnerSource-Guidance/InnerSource-Guidance.html">
+            <a style="color:#fff" href="InnerSource-Guidance/index.html">
                 <big>
                     <center>
                         &#9783;
@@ -154,28 +154,28 @@
         <tr>
             <td width="15.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Docs-Ideas"/>Learn more about Ideas
+                    <small><a href="https://aka.ms/Docs-Ideas">Learn more about Ideas</a>
                     </small>
                 </center>
             </td>
             <td width="3.3%" style="border:0px" />
             <td width="15.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Docs-Projects"/>Learn more about projects
+                    <small><a href="https://aka.ms/Docs-Projects">Learn more about projects</a>
                     </small>
                 </center>
             </td>
             <td width="3.3%" style="border:0px" />
             <td width="15.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Docs-Assets">Learn more about Assets
+                    <small><a href="https://aka.ms/Docs-Assets">Learn more about Assets</a>
                     </small>
                 </center>
             </td>
             <td width="3.3%" style="border:0px" />
             <td width="15.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Docs-Insights">Learn more about Insights
+                    <small><a href="https://aka.ms/Docs-Insights">Learn more about Insights</a>
                     </small>
                 </center>
             </td>
@@ -183,7 +183,7 @@
             <td width="15.5%" style="border:0px">
                 <center>
                     <small><a href="https://aka.ms/Docs-My-InnerSource">Learn more about
-                            MyInnerSource
+                            MyInnerSource</a>
                     </small>
                 </center>
             </td>
@@ -191,19 +191,19 @@
         <tr>
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Docs-Post-Idea"/>How to Post your Idea
+                    <small><a href="https://aka.ms/Docs-Post-Idea">How to Post your Idea</a>
                     </small>
                 </center>
                 <td width="3.3%" style="border:0px" />
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Docs-Creating-Project-from-an-Idea"/>How to Create your Project
+                    <small><a href="https://aka.ms/Docs-Creating-Project-from-an-Idea">How to Create your Project</a>
                     </small>
                 </center>
                 <td width="3.3%" style="border:0px" />
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Docs-Adding-an-Asset"/>How to Add an Asset
+                    <small><a href="https://aka.ms/Docs-Adding-an-Asset">How to Add an Asset</a>
                     </small>
                 </center>
             </td>
@@ -211,19 +211,19 @@
         <tr>
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Docs-Vote-an-Idea"/>How to Vote for Ideas
+                    <small><a href="https://aka.ms/Docs-Vote-an-Idea">How to Vote for Ideas</a>
                     </small>
                 </center>
                 <td width="3.3%" style="border:0px" />
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Docs-Join-a-Project"/>How to Join a Project
+                    <small><a href="https://aka.ms/Docs-Join-a-Project">How to Join a Project</a>
                     </small>
                 </center>
             <td width="3.3%" style="border:0px">
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Docs-Register-Asset-Usage"/>How to Register Asset Usage
+                    <small><a href="https://aka.ms/Docs-Register-Asset-Usage">How to Register Asset Usage</a>
                     </small>
                 </center>
         </tr>
