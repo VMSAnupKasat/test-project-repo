@@ -10,7 +10,7 @@
         <td style="border:0px"></td>
         <td width="100%" style="color:#fff;border:0px" colspan="3">
             <h1 style="color:#fff;">
-                <center>![Chrysalis logo](attachments/Chrysalis-logo.png) Welcome to Chrysalis Help </center>
+                <center><img href="attachments/Chrysalis-logo.png" alt="Chrysalis logo" height="49px" width="52px"/> Welcome to Chrysalis Help </center>
             </h1>
         </td>
         <td style="border:0px"></td>
