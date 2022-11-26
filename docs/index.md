@@ -7,12 +7,10 @@
 <table width="100%">
     <tr style="background-color:#05529c">
         <td style="border:0px"></td>
-        <td style="border:0px">
-        ![Chrysalis-log](attachments/Chrysalis-logo.png)
-        </td>
+        <td style="border:0px"></td>
         <td width="100%" style="color:#fff;border:0px" colspan="3">
             <h1 style="color:#fff;">
-                <center>Welcome to Chrysalis Help </center>
+                <center>![Chrysalis logo](attachments/Chrysalis-logo.png) Welcome to Chrysalis Help </center>
             </h1>
         </td>
         <td style="border:0px"></td>
