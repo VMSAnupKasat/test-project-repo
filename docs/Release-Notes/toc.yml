@@ -1,5 +1,10 @@
 - name: Release Notes
   href: Index.md
+- name: Release-5.0
+  href: Release-5.0.md
+- name: Release-4.0
+  href: Release-4.0.md
+- name: Release-5.0.md
 - name: Release-3.0
   href: Release-3.0.md
 - name: Release-2.0
