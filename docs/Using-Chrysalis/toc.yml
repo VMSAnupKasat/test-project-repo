@@ -57,16 +57,14 @@
 - name: Bootstrap IP
   href: Bootstrap-IP--(Bootstrap-Portal)/Index.md
   items:
-   - name: Add Engagement
-     href: Bootstrap-IP--(Bootstrap-Portal)/Add-Engagement.md
    - name: Engagement Users
      href: Bootstrap-IP--(Bootstrap-Portal)/Engagement-Users.md
-   - name: Selecting IP Packages and IP Components for an Engagement ID
-     href: Bootstrap-IP--(Bootstrap-Portal)/Selecting-IP-Packages-and-IP-Components-for-an-Engagement-ID.md
-   - name: Bootstrap Engagement
-     href: Bootstrap-IP--(Bootstrap-Portal)/Bootstrap-Engagement.md
-   - name: Bootstrap History
-     href: Bootstrap-IP--(Bootstrap-Portal)/Bootstrap-History.md
+   - name: Add and Edit Engagement
+     href: Bootstrap-IP--(Bootstrap-Portal)/Add-and-Edit-Engagement.md
+   - name: Engagement Bootstrap List
+     href: Bootstrap-IP--(Bootstrap-Portal)/Engagement-Bootstrap-List.md
+   - name: Engagement Bootstrap History
+     href: Bootstrap-IP--(Bootstrap-Portal)/Engagement-Bootstrap-History.md
 - name: Ideas
   href: ideas/Index.md
   items:
