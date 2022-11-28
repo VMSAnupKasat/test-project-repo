@@ -9,8 +9,6 @@
      href: Assets/Explore-Assets.md
    - name: Asset Types
      href: Assets/Asset_Types.md 
-   - name: Adding an Asset
-     href: Assets/Adding-an-Asset.md
    - name: Edit and Delete an Asset.md
      href: Assets/Edit-and-Delete-an-Asset.md
    - name: Register Asset Usage
@@ -19,7 +17,9 @@
      href: Assets/Register-Usage-details.md
    - name: Trending Assets and Role-based permission on Assets
      href: Assets/Trending-Assets-and-Role-based-permission-on-Assets.md
-  
+   - name: CSE Asset Import to Chrysalis
+   - name: Adding an Asset
+     href: Assets/Adding-an-Asset.md
      items:
       - name: Code Artifact
         href: Assets/Adding-an-Asset/Code-Artifact.md
