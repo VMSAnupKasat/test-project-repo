@@ -37,8 +37,6 @@
         href: Assets/Adding-an-Asset/Others.md
       - name: Tool
         href: Assets/Adding-an-Asset/Tool.md
-      - name: Using Manifest Public File
-        href: Assets/Adding-an-Asset/Using-Manifest-Public-File.md
    - name: Asset Detail Page
      href: Assets/Asset-detail-Page.md
      items:
