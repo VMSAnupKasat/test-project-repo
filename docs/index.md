@@ -159,28 +159,28 @@
             <td width="3.3%" style="border:0px" />
             <td width="15.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Docs-Projects">Learn more about projects</a>
+                    <small><a href="https://aka.ms/Docs-Projects" target="_blank">Learn more about projects</a>
                     </small>
                 </center>
             </td>
             <td width="3.3%" style="border:0px" />
             <td width="15.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Docs-Assets">Learn more about Assets</a>
+                    <small><a href="https://aka.ms/Docs-Assets" target="_blank">Learn more about Assets</a>
                     </small>
                 </center>
             </td>
             <td width="3.3%" style="border:0px" />
             <td width="15.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Docs-Insights">Learn more about Insights</a>
+                    <small><a href="https://aka.ms/Docs-Insights" target="_blank">Learn more about Insights</a>
                     </small>
                 </center>
             </td>
 		<td width="3.3%" style="border:0px"/>
             <td width="15.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Docs-My-InnerSource">Learn more about
+                    <small><a href="https://aka.ms/Docs-My-InnerSource" target="_blank">Learn more about
                             MyInnerSource</a>
                     </small>
                 </center>
@@ -189,19 +189,19 @@
         <tr>
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Docs-Post-Idea">How to Post your Idea</a>
+                    <small><a href="https://aka.ms/Docs-Post-Idea" target="_blank">How to Post your Idea</a>
                     </small>
                 </center>
                 <td width="3.3%" style="border:0px" />
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Docs-Creating-Project-from-an-Idea">How to Create your Project</a>
+                    <small><a href="https://aka.ms/Docs-Creating-Project-from-an-Idea" target="_blank">How to Create your Project</a>
                     </small>
                 </center>
                 <td width="3.3%" style="border:0px" />
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Docs-Adding-an-Asset">How to Add an Asset</a>
+                    <small><a href="https://aka.ms/Docs-Adding-an-Asset" target="_blank">How to Add an Asset</a>
                     </small>
                 </center>
             </td>
@@ -209,19 +209,19 @@
         <tr>
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Docs-Vote-an-Idea">How to Vote for Ideas</a>
+                    <small><a href="https://aka.ms/Docs-Vote-an-Idea" target="_blank">How to Vote for Ideas</a>
                     </small>
                 </center>
                 <td width="3.3%" style="border:0px" />
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Docs-Join-a-Project">How to Join a Project</a>
+                    <small><a href="https://aka.ms/Docs-Join-a-Project" target="_blank">How to Join a Project</a>
                     </small>
                 </center>
             <td width="3.3%" style="border:0px">
             <td width="20.5%" style="border:0px">
                 <center>
-                    <small><a href="https://aka.ms/Docs-Register-Asset-Usage">How to Register Asset Usage</a>
+                    <small><a href="https://aka.ms/Docs-Register-Asset-Usage" target="_blank">How to Register Asset Usage</a>
                     </small>
                 </center>
         </tr>
