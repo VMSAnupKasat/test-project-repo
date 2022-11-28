@@ -43,7 +43,7 @@
      href: Assets/Asset-detail-Page.md
      items:
       - name: Extract, Download, and Bootstrap IP
-        href: Assets/Asset-detail-page/Analyze-Extract-and-Download-IP.md
+        href: Assets/Asset-detail-page/Extract-Download-and-Bootstrap-IP.md
       - name: Approving IP Package and IP Component
         href: Assets/Asset-detail-page/Approving-IP-Package-&-IP-Component.md
       - name: Bootstrap History
