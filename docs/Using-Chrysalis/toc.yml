@@ -44,17 +44,11 @@
      items:
       - name: Extract, Download, and Bootstrap IP
         href: Assets/Asset-detail-page/Extract-Download-and-Bootstrap-IP.md
-      - name: Approving IP Package and IP Component
-        href: Assets/Asset-detail-page/Approving-IP-Package-&-IP-Component.md
       - name: Bootstrap History
+        href: Assets/Asset-detail-page/Bootstrap History.md
+      - name: Approving or publishing the IP Package and IP Component
         href: Assets/Asset-detail-page/Bootstrap-history-tab.md
-      - name: Create New Version of IP package and IP component
-        href: Assets/Asset-detail-page/Create-New-Version-of-IP-package-&-IP-component.md
-      - name: Standalone Bootstrap
-        href: Assets/Asset-detail-page/Standalone-Bootstrap.md
-      - name: Versioning of IP Package and IP Component
-        href: Assets/Asset-detail-page/Versioning-of-IP-Package-and-IP-Component.md
-- name: Bootstrap IP
+   - name: Bootstrap IP
   href: Bootstrap-IP--(Bootstrap-Portal)/Index.md
   items:
    - name: Engagement Users
