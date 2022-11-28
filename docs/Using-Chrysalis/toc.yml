@@ -7,18 +7,19 @@
   items:
    - name: Explore Assets
      href: Assets/Explore-Assets.md
-   - name: Editing an Asset
-     href: Assets/Editing-an-Asset.md
-   - name: Register Asset Usage
-     href: Assets/Register-Asset-Usage.md
-   - name: Viewing Document Content- Docs as Code
-     href: Assets/Viewing Document Content- Docs as Code.md
-   - name: Viewing the Registered Usages from Asset page
-     href: Assets/Viewing-the-Registered-Usages-from-Asset-page.md
-   - name: Trending Assets
-     href: Assets/Trending-Assets.md
+   - name: Asset Types
+     href: Assets/Asset_Types.md 
    - name: Adding an Asset
      href: Assets/Adding-an-Asset.md
+   - name: Edit and Delete an Asset.md
+     href: Assets/Edit-and-Delete-an-Asset.md
+   - name: Register Asset Usage
+     href: Assets/Register-Asset-Usage.md
+   - name: Register Usage details
+     href: Assets/Register-Usage-details.md
+   - name: Trending Assets and Role-based permission on Assets
+     href: Assets/Trending-Assets-and-Role-based-permission-on-Assets.md
+  
      items:
       - name: Code Artifact
         href: Assets/Adding-an-Asset/Code-Artifact.md
