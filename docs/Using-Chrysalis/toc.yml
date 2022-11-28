@@ -47,7 +47,7 @@
       - name: Bootstrap History
         href: Assets/Asset-detail-page/Bootstrap History.md
       - name: Approving or publishing the IP Package and IP Component
-        href: Assets/Asset-detail-page/Bootstrap-history-tab.md
+        href: Assets/Asset-detail-page/Approving-publishing-the-IP-Package-and-IP-Component.md
    - name: Bootstrap IP
   href: Bootstrap-IP--(Bootstrap-Portal)/Index.md
   items:
