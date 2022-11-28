@@ -23,25 +23,25 @@
      href: Assets/Creating-IP-Enablers-URL.md
    - name: PAT
      href: Assets/PAT.md
-   - name: Adding an Asset
-     href: Assets/Adding-an-Asset.md
-     items:
-      - name: Code Artifact
-        href: Assets/Adding-an-Asset/Code-Artifact.md
-      - name: Docs as Code
-        href: Assets/Adding-an-Asset/Docs-as-Code.md
-      - name: Document Template
-        href: Assets/Adding-an-Asset/Document-Template.md
-      - name: Guidance
-        href: Assets/Adding-an-Asset/Guidance.md
-      - name: IP Component
-        href: Assets/Adding-an-Asset/IP-Component.md
-      - name: IP Package
-        href: Assets/Adding-an-Asset/IP-Package.md
-      - name: Others
-        href: Assets/Adding-an-Asset/Others.md
-      - name: Tool
-        href: Assets/Adding-an-Asset/Tool.md
+- name: Adding an Asset
+  href: Assets/Adding-an-Asset.md
+  items:
+   - name: Code Artifact
+     href: Assets/Adding-an-Asset/Code-Artifact.md
+   - name: Docs as Code
+     href: Assets/Adding-an-Asset/Docs-as-Code.md
+   - name: Document Template
+     href: Assets/Adding-an-Asset/Document-Template.md
+   - name: Guidance
+     href: Assets/Adding-an-Asset/Guidance.md
+   - name: IP Component
+     href: Assets/Adding-an-Asset/IP-Component.md
+   - name: IP Package
+     href: Assets/Adding-an-Asset/IP-Package.md
+   - name: Others
+     href: Assets/Adding-an-Asset/Others.md
+   - name: Tool
+     href: Assets/Adding-an-Asset/Tool.md
    - name: Asset Detail Page
      href: Assets/Asset-detail-Page.md
      items:
@@ -51,7 +51,7 @@
         href: Assets/Asset-detail-page/Bootstrap History.md
       - name: Approving or publishing the IP Package and IP Component
         href: Assets/Asset-detail-page/Approving-publishing-the-IP-Package-and-IP-Component.md
-   - name: Bootstrap IP
+- name: Bootstrap IP
   href: Bootstrap-IP--(Bootstrap-Portal)/Index.md
   items:
    - name: Engagement Users
@@ -106,6 +106,3 @@
   items:
    - name: Post and Edit comments
      href: Social-Capabilities-of-an-Asset/Post-and-Edit-comments.md
-
-
-
