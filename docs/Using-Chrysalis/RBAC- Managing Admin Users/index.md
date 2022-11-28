@@ -18,7 +18,7 @@ Also, there are two user roles for any engagement: **Engagement member** and **E
 
 - Select the next icon from a specific engagement id under All Engagements tab.
 
-![next icon1.png](/.attachments/next%20icon1-d2c45dd8-4933-4846-a7c2-e54ba183493a.png)
+![next icon1.png](/docs/attachments/next icon1.png)
 
 - On the Engagement Details page, select the **Users** tab.
 
