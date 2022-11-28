@@ -42,7 +42,7 @@
    - name: Asset Detail Page
      href: Assets/Asset-detail-Page.md
      items:
-      - name: Analyze Extract and Download IP
+      - name: Extract, Download, and Bootstrap IP
         href: Assets/Asset-detail-page/Analyze-Extract-and-Download-IP.md
       - name: Approving IP Package and IP Component
         href: Assets/Asset-detail-page/Approving-IP-Package-&-IP-Component.md
