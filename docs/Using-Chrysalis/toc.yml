@@ -83,6 +83,8 @@
 - name: Insights
   href: Insights/Index.md
   items:
+   - name: Deep link query search
+     href: Insights/Deep-link-query-search-using-OData-languague.md
    - name: Reports
      href: Insights/Reports.md
 - name: Projects
