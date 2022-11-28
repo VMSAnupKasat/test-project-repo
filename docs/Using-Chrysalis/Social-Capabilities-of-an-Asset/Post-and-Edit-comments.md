@@ -37,6 +37,7 @@ With the Post and Edit Comment option, you can convey your interest, suggestions
 ## Recent tab and [**_Register Usage tab_**](Assets/Viewing-the-Registered-Usages-from-Asset-page.md):
 
 - These tabs will display the engagement bootstrap id details that are tagged under the selected asset (IP package or IP component)
+
 </br>
 </br>
 
