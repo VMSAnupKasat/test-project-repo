@@ -31,7 +31,7 @@ With the Post and Edit Comment option, you can convey your interest, suggestions
 
 3. Now the comment is edited.
 
-![veredit5.png](/docs/attachments/veredit-5.png)
+![veredit-5.png](/docs/attachments/veredit-5.png)
 
 
 ## Recent tab and [**_Register Usage tab_**](Assets/Viewing-the-Registered-Usages-from-Asset-page.md):
