@@ -9,13 +9,13 @@
     ],
     "resource": [
       {
-        "src": "docs/",
+        "src": "docs/attachments/",
         "files": ["**/*.{jpg,jpeg,png,bmp,gif,svg}"],
         "dest": "."
       }
     ],
     "externalReference": [],
-    "dest": "",
+    "dest": "_site",
     "title": "Chrysalis Help document",
     "serve": false,
     "globalMetadata": {
