@@ -9,7 +9,7 @@
     ],
     "resource": [
       {
-        "src": "docs/attachments/",
+        "src": "docs/",
         "files": ["**/*.{jpg,jpeg,png,bmp,gif,svg}"],
         "dest": "."
       }
