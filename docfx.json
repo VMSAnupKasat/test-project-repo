@@ -17,6 +17,7 @@
     "externalReference": [],
     "dest": "",
     "title": "Chrysalis Help document",
+    "template": ["docfx/templates/egip"],
     "serve": false,
     "globalMetadata": {
       "_appTitle": "Chrysalis Help document",
