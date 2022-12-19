@@ -20,6 +20,7 @@
     "serve": false,
     "globalMetadata": {
       "_appTitle": "Chrysalis Help document",
+      "_gitUrlPattern":"vso",
       "_disableContribution": false,
       "_disableBreadcrumb": true,
       "_gitContribute": {
