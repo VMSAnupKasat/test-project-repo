@@ -6,7 +6,7 @@ If you are the Project Owner, you can click the approval link from the email not
 
 ### Following are the steps to Approve/Reject the request
 
-- Browse to [**_Chrysalis._**](https://aka.ms/chrysalis).
+- Browse to [**_Chrysalis._**](https://aka1.ms/chrysalis).
 
 - Select the My InnerSource menu and click the Approvals tab.
 
