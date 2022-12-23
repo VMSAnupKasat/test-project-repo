@@ -1,4 +1,4 @@
-## Overview  - Testing version changes demo
+## Overview  - Testing
 
 Chrysalis is a transformative platform, providing opportunities for everyone in Microsoft to participate in **InnerSource culture** as we work together to bring ideas to life - Browse to [**_Chrysalis._**](https://aka1.ms/chrysalis)..
 
