@@ -1,4 +1,4 @@
-# Evergreen Delivery IP - Test again
+# Evergreen Delivery IP - Testing
 
 ![Evergreen Delivery IP Logo](media/evergreen-delivery-ip-logo-small.png)
 
