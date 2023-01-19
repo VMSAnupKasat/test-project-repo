@@ -1,4 +1,4 @@
-# Evergreen Delivery IP - webhook demo 1
+# Evergreen Delivery IP - webhook
 
 ![Evergreen Delivery IP Logo](media/evergreen-delivery-ip-logo-small.png)
 
