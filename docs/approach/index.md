@@ -1,6 +1,6 @@
 # Overall Approach
 
-This section defines the overall approach suggested for the IP development, innersource community building and discovery of delivery IP. It covers these three main areas looked at at part of the Evergreen Delivery IP initiative:
+Webhook Trigger - This section defines the overall approach suggested for the IP development, innersource community building and discovery of delivery IP. It covers these three main areas looked at at part of the Evergreen Delivery IP initiative:
 
 - [team model](team-model.md) that is based on the [innersource](../resources/innersource.md) approach, suggests the team model starting from defining the core team, describing the approach for managing contribution and discovery, it also touches on the tools suggested for use to implement the approach
 - [modular ip asset management](diverse-delivery-ip.md) that should support diverse teams working on different set of IP assets (documentation, reference architecture, data models, scripts, code and components) and is based on the concept of "content lenses"
