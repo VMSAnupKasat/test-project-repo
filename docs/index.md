@@ -1,4 +1,4 @@
-# Evergreen Delivery IP - service hook ado
+# Evergreen Delivery IP - detail ADO service hook
 
 ![Evergreen Delivery IP Logo](media/evergreen-delivery-ip-logo-small.png)
 
