@@ -17,7 +17,6 @@
     "externalReference": [],
     "dest": "",
     "title": "Evergreen Delivery IP",
-    "template": ["default"],
     "serve": false,
     "globalMetadata": {
       "_appTitle": "Evergreen Delivery IP",
