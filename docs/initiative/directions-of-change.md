@@ -2,6 +2,12 @@
 
 Given that improvement of delivery IP process is a huge endeavor, the evergreen delivery IP initiative focuses on four specific **directions of change** as described below. Each of these directions of change then are expanded via specific [objectives](objectives.md).
 
+<ul>
+<li>
+<a href="https://dev.chrysalis.microsoft.com/assets">This is testing link
+</li>
+</ul>
+
 ## Consistency Across Domain
 
 Leverage uniform approaches, clear set of tools across entire domain to drive simplicity and consistency in how IP is “developed”, managed and reused, introduce clear continuum from community to managed IP
