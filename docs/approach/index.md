@@ -5,7 +5,7 @@ This section defines the overall approach suggested for the IP development, inne
 - [modular ip asset management](diverse-delivery-ip.md) that should support diverse teams working on different set of IP assets (documentation, reference architecture, data models, scripts, code and components) and is based on the concept of "content lenses"
 - [sustaining and growing ip contribution culture](contribution-culture/contribution-culture.md) that includes approaches suggested as part of the program to ensure contribution moves from current spots of IP contribution successes to more pervasive focus on IP contribution all up in ACAI.
 
-## Principles
+## Principles - Details
 
 The main principles followed by the approach are:
 
