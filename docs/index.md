@@ -1,4 +1,4 @@
-# Evergreen Delivery IP - Dev Testing
+# Evergreen Delivery IP - QA Testing
 
 ![Evergreen Delivery IP Logo](media/evergreen-delivery-ip-logo-small.png)
 
