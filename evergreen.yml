@@ -1,6 +1,6 @@
 - version: 0.1
   id: evergreenip
-  name: Evergreen Delivery IP
+  name: Evergreen Delivery IP Updated
   description: 
     URL: https://aka.ms/evergreenip
     text: Evergreen Delivery IP is ACAI CTO driven program to improve the way CTO and field teams are finding, reusing, becoming contributors and leading evolution of managed and community IP. This is repository containing the guidance and supporting materials/tools created through the initiative.
