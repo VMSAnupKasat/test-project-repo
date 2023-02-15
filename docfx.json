@@ -16,7 +16,7 @@
     ],
     "externalReference": [],
     "dest": "",
-    "title": "Evergreen Delivery IP",
+    "title": "Evergreen Delivery IP updated on 15th feb2023",
     "template": ["default", "docfx/templates/egip"],
     "serve": false,
     "globalMetadata": {
