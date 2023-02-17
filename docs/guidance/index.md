@@ -1,6 +1,6 @@
 # Getting Started
 
-This section provides specific guidance on staring with evergreen delivery IP approaches, showcases how to set up the overall team structure and start adopting more and more lenses as a way of enriching the repository as it grows and needs more rich discovery. It can hopefully allow team adopting evergreen principles to avoid some of the blockers (aka ['evergivens'](https://en.wikipedia.org/wiki/Ever_Given#/media/File:Container_Ship_'Ever_Given'_stuck_in_the_Suez_Canal,_Egypt_-_March_24th,_2021_cropped.jpg)) and ensure less effort needs to be invested to set up well working environment.
+This section providess specific guidance on staring with evergreen delivery IP approaches, showcases how to set up the overall team structure and start adopting more and more lenses as a way of enriching the repository as it grows and needs more rich discovery. It can hopefully allow team adopting evergreen principles to avoid some of the blockers (aka ['evergivens'](https://en.wikipedia.org/wiki/Ever_Given#/media/File:Container_Ship_'Ever_Given'_stuck_in_the_Suez_Canal,_Egypt_-_March_24th,_2021_cropped.jpg)) and ensure less effort needs to be invested to set up well working environment.
 
 ## Core
 
