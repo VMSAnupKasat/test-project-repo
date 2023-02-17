@@ -1,4 +1,4 @@
-# Evergreen Delivery IP - Test build Check - Renew PAT Check
+# Evergreen Delivery IP 
 
 ![Evergreen Delivery IP Logo](media/evergreen-delivery-ip-logo-small.png)
 
