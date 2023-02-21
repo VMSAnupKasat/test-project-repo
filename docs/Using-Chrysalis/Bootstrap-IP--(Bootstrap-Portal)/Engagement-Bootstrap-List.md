@@ -54,11 +54,11 @@ Engagement Bootstrap is used when you have to bootstrap multiple IP Packages or 
 
 8. Click the **Next** button.
 
-![SelectADO.png](/docs/attachments/SelectADO.png)
+![SelectADO.png](media/SelectADO.png)
 
 9. When your Bootstrap runs into an error, select the required option as described below and click the **Next** button.
 
-![skipADO.png](/docs/attachments/skipADO.png)
+![skipADO.png](media/skipADO.png)
 
 - **Skip the current (IP Package/ IP Component) on error :**
     This is a recommended option. Selecting this will skip the IP package/component for which an error occurs and continue running the next packages/components.
