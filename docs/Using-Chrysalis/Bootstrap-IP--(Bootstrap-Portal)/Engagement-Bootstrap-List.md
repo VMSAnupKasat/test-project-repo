@@ -32,7 +32,7 @@ Engagement Bootstrap is used when you have to bootstrap multiple IP Packages or 
 
 2. You can select only Active packages, and when the asset has multiple versions, you can start picking the required Asset version from the dropdown below the package name and click Add.
 
-![packagedropdown.png](/docs/attachments/packagedropdown.png)
+![packagedropdown.png](media/packagedropdown.png)
 
 `Note:` You can see the latest Asset version visible on top of the dropdown list.
 
