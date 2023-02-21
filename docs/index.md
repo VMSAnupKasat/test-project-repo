@@ -8,7 +8,7 @@ Evergreen Delivery IP is ACAI CTO driven program to improve the way  CTO and fie
 
 To find more on the initiative itself, demo directions of change and short term objective, broader goals, please see [Initiative section](initiative/index.md). This section also includes information on how to contribute, provide feedback, join the team that is working in and promoting [innersource](https://innersourcecommons.org/learn/learning-path/) way of collaborating.
 
-## Approach
+## Approach definition
 
 The general suggested approach of how ACAI delivery teams should manage the IP efforts going forward is defined in [Approach section](approach/index.md). The main aspects that the approach is touching to achieve goals of better discoverability, more grassroots involvement and more uniform general approach managing IP are:
 
