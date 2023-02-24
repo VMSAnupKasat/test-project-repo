@@ -17,6 +17,7 @@
     "externalReference": [],
     "dest": "",
     "title": "Evergreen Delivery IP",
+    "template": ["docfx/templates/egip"],
     "serve": false,
     "globalMetadata": {
       "_appTitle": "Evergreen Delivery IP",
