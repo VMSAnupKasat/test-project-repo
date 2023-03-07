@@ -1,4 +1,4 @@
-# Evergreen Delivery IP - Testing again 328pm
+# Evergreen Delivery IP - Testing now
 
 ![Evergreen Delivery IP Logo](media/evergreen-delivery-ip-logo-small.png)
 
