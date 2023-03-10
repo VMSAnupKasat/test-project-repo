@@ -1,4 +1,4 @@
-# Evergreen Delivery IP - Edited again for testing by Anup
+# Evergreen Delivery IP 
 
 ![Evergreen Delivery IP Logo](media/evergreen-delivery-ip-logo-small.png)
 
