@@ -1,4 +1,4 @@
-# Evergreen Delivery IP - Testing now by QA Team
+# Evergreen Delivery IP - Testing now by QA Team automatic refresh
 
 ![Evergreen Delivery IP Logo](media/evergreen-delivery-ip-logo-small.png)
 
