@@ -1,4 +1,4 @@
-# Evergreen Delivery IP - QA Testing 1 Checking
+# Evergreen Delivery IP - QA Testing UAT
 
 ![Evergreen Delivery IP Logo](media/evergreen-delivery-ip-logo-small.png)
 
