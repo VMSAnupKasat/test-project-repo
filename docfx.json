@@ -19,13 +19,13 @@
     "title": "Evergreen Delivery IP",
     "serve": false,
     "globalMetadata": {
-      "_appTitle": "refresh v1 Evergreen Delivery IP",
+      "_appTitle": "refresh v2 Evergreen Delivery IP",
       "_gitUrlPattern":"vso",
       "_disableContribution": false,
       "_disableBreadcrumb": true,
       "_gitContribute": {
         "repo": "https://dev.azure.com/servicescode-test/TCS-Test-Project/_git/DocsAsCode",
-        "branch": "refresh-v1"
+        "branch": "refresh-v2"
       }
     }
   }
