@@ -1,5 +1,6 @@
 {
   "build": {
+    "base_url": "",
     "content": [
       {
         "src": "docs/",
@@ -26,10 +27,7 @@
       "_gitContribute": {
         "repo": "https://dev.azure.com/servicescode-test/TCS-Test-Project/_git/DocsAsCode",
         "branch": "main"
-        },
-      "metadata": {
-        "base_url": "/docs/"
-      }
+        }
     }
   }
 }
