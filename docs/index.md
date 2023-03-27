@@ -1,4 +1,4 @@
-# Evergreen Delivery IP Test - Edited for testing of Refresh Content -- Added by Anup Kasat
+# Evergreen Delivery IP
 
 ![Evergreen Delivery IP Logo](media/evergreen-delivery-ip-logo-small.png)
 
