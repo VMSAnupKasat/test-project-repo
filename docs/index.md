@@ -2,8 +2,6 @@
 
 ![Evergreen Delivery IP Logo](media/evergreen-delivery-ip-logo-small.png)
 
-Evergreen Delivery IP Test -- AJAY PS- For LOCAL - 40th - 41st -42nd -43rd -44th -45th -46th -47th -48th -49th -50th -51st -52nd
-
 Evergreen Delivery IP is ACAI CTO driven-program to improve the way  CTO and field teams are finding, reusing, becoming contributors and leading evolution of managed and community IP.
 
 ## About the Initiative
