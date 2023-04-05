@@ -4,7 +4,7 @@ Chrysalis is a transformative platform, providing opportunities for everyone in 
 
 It’s a new home for communities and individuals to come together and collaborate on projects that can improve our IP, solutions, and business. Chrysalis allows everyone to work on innovative ideas they care about while giving visibility to their contributions, efforts, and achievements.
 
-## Vision
+## Vision yashashwini edit
 
 **Empower every employee in the organization to collaborate, innovate, contribute to areas of their passion and realize greater value​.**
 
