@@ -1,5 +1,6 @@
 {
   "build": {
+    "contentSecurityPolicy": "default-src 'self'; script-src 'self' 'unsafe-inline';",
     "content": [
       {
         "src": "docs2/",
