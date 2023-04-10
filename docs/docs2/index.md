@@ -1,8 +1,6 @@
 # Evergreen Delivery IP 
 
-<script> alert(1) </script>
-
-#This is refresh content testing
+#This is refresh content testing -- No new version will be created
 
 ![Evergreen Delivery IP Logo](media/evergreen-delivery-ip-logo-small.png)
 
