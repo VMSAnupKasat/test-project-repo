@@ -1,5 +1,7 @@
-# Evergreen Delivery IP Changed to see if now refresh content happening
+# Evergreen Delivery IP 
 ![Evergreen Delivery IP Logo](media/evergreen-delivery-ip-logo-small.png)
+
+#This should not create new version
 
 Evergreen Delivery IP is ACAI CTO driven program to improve the way  CTO and field teams are finding, reusing, becoming contributors and leading evolution of managed and community IP.
 
