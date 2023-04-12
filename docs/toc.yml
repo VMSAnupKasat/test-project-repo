@@ -1,6 +1,6 @@
 - name: Home
   href: home/
-  topicHref: docs/index.md
+  topicHref: index.md
 - name: Initiative
   href: initiative/
   topicHref: initiative/index.md
