@@ -1,4 +1,4 @@
-# Evergreen Delivery IP - 13april - 6pm
+# Evergreen Delivery IP - 17april - 10:15AM
 
 ![Evergreen Delivery IP Logo](media/evergreen-delivery-ip-logo-small.png)
 
