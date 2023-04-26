@@ -15,9 +15,9 @@
       }
     ],
     "externalReference": [],
-    "dest": "_site",
-    "title": "Evergreen Delivery IP updated on 15th feb2023",
-    "template": ["default", "..docfx/templates/egip"],
+    "dest": "",
+    "title": "Evergreen Delivery IP",
+    "template": ["default", "docfx/templates/egip"],
     "serve": false,
     "globalMetadata": {
       "_appTitle": "Evergreen Delivery IP",
@@ -25,9 +25,8 @@
       "_disableBreadcrumb": true,
       "_gitContribute": {
         "repo": "https://dev.azure.com/servicescode-test/TCS-Test-Project/_git/DocsAsCode",
-        "branch": "main",
-        "apiSpecFolder": "DocsAsCode"
-        }
+        "branch": "main"
+      }
     }
   }
 }
