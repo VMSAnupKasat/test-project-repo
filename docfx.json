@@ -1,6 +1,5 @@
 {
   "build": {
-    "base_url": "",
     "content": [
       {
         "src": "docs/",
