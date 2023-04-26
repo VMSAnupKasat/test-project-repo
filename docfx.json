@@ -27,9 +27,6 @@
         "repo": "https://dev.azure.com/servicescode-test/TCS-Test-Project/_git/DocsAsCode",
         "branch": "evergreen-docs"
       }
-    },
-    "fileMetadata": {
-      "FileNameLowercase": true
     }
   }
 }
