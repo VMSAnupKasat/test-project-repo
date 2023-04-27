@@ -18,20 +18,6 @@
     "dest": "",
     "title": "Evergreen Delivery IP",
     "serve": false,
-    "postProcessors": [
-      {
-        "type": "legacy.AddFileMetadata",
-        "outputFileMetadata": {
-          "outputFolderRelativeToInputFolder": "../_site",
-          "fileName": {
-            "transform": {
-              "type": "CSharpExpression",
-              "value": "Path.Combine(Path.GetDirectoryName(outputFile.RelativePath), Path.GetFileNameWithoutExtension(outputFile.RelativePath).ToLowerInvariant() + outputFile.Extension)"
-            }
-          }
-        }
-      }
-    ],
     "globalMetadata": {
       "_appTitle": "Evergreen Delivery IP",
       "_gitUrlPattern":"vso",
