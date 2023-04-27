@@ -19,6 +19,7 @@
     "title": "Evergreen Delivery IP",
     "serve": false,
     "globalMetadata": {
+      "FileNameToLower": true,
       "_appTitle": "Evergreen Delivery IP",
       "_gitUrlPattern":"vso",
       "_disableContribution": false,
