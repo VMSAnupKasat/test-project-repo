@@ -1,5 +1,5 @@
 - name: Getting Started
-  href: Index.md
+  href: index.md
 - name: Core Structure
   href: core/index.md
   items:
