@@ -32,8 +32,9 @@
       "_appTitle": "Evergreen Delivery IP",
       "_disableContribution": false,
       "_disableBreadcrumb": true,
+      "_gitUrlPattern":"github",
       "_gitContribute": {
-        "repo": "https://dev.azure.com/servicescode-test/TCS-Test-Project/_git/DocsAsCode",
+        "repo": "https://github.com/VMSAnupKasat/test-project-repo",
         "branch": "evergreen-doc-path"
       }
     }
