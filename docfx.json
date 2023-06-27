@@ -20,7 +20,7 @@
     "serve": false,
     "globalMetadata": {
       "_appTitle": "Evergreen Delivery IP",
-      "_gitUrlPattern":"vso",
+      "_gitUrlPattern":"github",
       "_disableContribution": false,
       "_disableBreadcrumb": true,
       "_gitContribute": {
