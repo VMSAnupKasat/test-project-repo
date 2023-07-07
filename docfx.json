@@ -24,8 +24,8 @@
       "_disableContribution": false,
       "_disableBreadcrumb": true,
       "_gitContribute": {
-        "repo": "https://dev.azure.com/servicescode-test/TCS-Test-Project/_git/DocsAsCode",
-        "branch": "main"
+        "repo": "https://github.com/VMSAnupKasat/test-project-repo/blob/users/v-anupkasat/testing-for-branch-name",
+        "branch": "users/v-anupkasat/testing-for-branch-name"
       }
     }
   }
