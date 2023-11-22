@@ -1,0 +1,47 @@
+{
+  "PrimaryDetails": {
+    "AssetTitle": "Ip collection manual manifest url checkingg test",
+    "AssetType": "IP Collection",
+    "Description": "test",
+    "Products": [],
+    "Scenarios": [],
+    "SolutionAreas": [],
+    "Tags": ["QATESTING"],
+    "AssetVersion": "1",
+    "AssetContributors": [],
+    "AssetOwner": ["v-ydhakad@microsoft.com"],
+    "RegisteredBy": "v-ydhakad@microsoft.com",
+    "RegisteredDate": "2023-11-22T08:49:56.0164784Z",
+    "IsPrivate": false,
+    "PrivateUsers": [],
+    "LinkedAssets": [],
+    "EffortsCouldSaveUpto": 1,
+    "AssetURLAccessSteps": "",
+    "Industries": [],
+    "AssetURLScope": null
+  },
+  "IPDetails": {
+    "DisplayVersion": "1",
+    "WorkItems": [],
+    "Repository": [],
+    "AssociatedComponents": [],
+    "Pipelines": [],
+    "docsAsCode": [],
+    "iterationAreaTeams": [
+      {
+        "name": "",
+        "sourceType": "ADO",
+        "url": "https://dev.azure.com/chrysalis-innersource/IBIS%20(Intelligent%20Bootstrap%20Integrated%20System)"
+      }
+    ],
+    "Queries": [],
+    "Dashboards": [],
+    "VariableGroups": [],
+    "PreProcessingSteps": "pre step\n1\n1\n1",
+    "PostProcessingSteps": "post",
+    "processTemplateEnabler": [],
+    "automationEnabler": [],
+    "isManualBootstrap": true,
+    "NotifyUsers": ["v-ydhakad"]
+  }
+}
