@@ -23,7 +23,7 @@
       "_disableContribution": false,
       "_disableBreadcrumb": true,
       "_gitContribute": {
-        "repo": "https://dev.azure.com/servicescode-test/TCS-Test-Project/_git/DocsAsCode",
+        "repo": "https://github.com/VMSAnupKasat/test-project-repo",
         "branch": "evergreen-pdf"
       }
     }
